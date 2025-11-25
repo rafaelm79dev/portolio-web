@@ -26,7 +26,7 @@ export default function Header() {
         {
             name: "GitHub",
             icon: "/social/github.svg",
-            url: "https://github.com/rafaelm79",
+            url: "https://github.com/rafaelm79dev",
             alt: "GitHub Profile",
         }
     ];
