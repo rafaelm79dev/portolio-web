@@ -1,6 +1,7 @@
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LanguageProviderWrapper from "./providers/LanguageProviderWrapper";
+import MetadataUpdater from "./components/MetadataUpdater";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -14,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-    title: "Portfolio de Rafael Morales | Desarrollador de Software",
+    title: "Rafael Morales Portfolio | Software Developer",
     description:
-        "Portfolio profesional de Rafael Morales, desarrollador (SQL, C#, Web) con experiencia en Tecnologias Microsoft.",
+        "Professional portfolio of Rafael Morales, software developer (SQL, C#, Web) with experience in Microsoft Technologies.",
 };
 
 export default function RootLayout({ children }) {
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
                 className={`${inter.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-[#fafafc] via-[#e2e2e2] to-[#cbd5e1]`}
             >
                 <LanguageProviderWrapper>
+                    <MetadataUpdater />
                     {children}
                 </LanguageProviderWrapper>
             </body>
