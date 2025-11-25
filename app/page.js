@@ -64,7 +64,7 @@ export default function Home() {
                 "C#",
                 "Power BI"
             ],
-            image: "/company_logo/finanzas365.png",
+            image: "/company_logo/Finanzas365.png",
         }
         ,
         {
