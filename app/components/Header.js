@@ -49,9 +49,26 @@ export default function Header() {
                         <h1 className="text-lg md:text-4xl font-bold leading-tight">
                             {developerName}
                         </h1>
-                        <p className="text-sm md:text-xl text-foreground/70">
+                        <div className="flex items-center gap-2 text-sm md:text-xl text-foreground/70">
                             {jobTitle}
-                        </p>
+                            <span className="text-lg md:text-xl text-gray-400 mx-2">|</span>
+                            <div className="relative w-4 h-4 md:w-6 md:h-6 inline-block">
+                                <Image
+                                    src="/uruguay-flag.svg"
+                                    alt="Uruguay flag"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="relative w-4 h-4 md:w-6 md:h-6 inline-block" >
+                                <Image
+                                    src="/mate.png"
+                                    alt="Mate"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
 

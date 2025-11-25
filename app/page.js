@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="container mx-auto py-12">
                     <div className="text-center">
                         <h2 className="text-2xl md:text-4xl font-bold">
-                            Experiencia Laboral
+                            {t("experience.works")}
                         </h2>
                     </div>
 
@@ -223,8 +223,7 @@ export default function Home() {
             </section>
 
             <footer className="text-center text-xs md:text-sm text-gray-500">
-                © {new Date().getFullYear()} Rafael Morales. Todos los derechos
-                reservados.
+                © {new Date().getFullYear()} Rafael Morales. {t("footer.rights")}
             </footer>
         </div>
     );
