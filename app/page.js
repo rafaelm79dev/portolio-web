@@ -72,7 +72,7 @@ export default function Home() {
             company: "Infocorp - Uruguay",
             period: language === "en" ? "May. 2004 - Apr. 2017" : "May. 2004 - Abr. 2017",
             description: language === "es" ? "⁃\tActué como referente técnico en diferentes proyectos. Colaboré en diferentes areas y tecnologias.  Realicé implementaciones de Proyectos BI y soluciones SharePoint.\n⁃\tParticipé en todo el ciclo de vida de proyectos de software, desde la arquitectura y el desarrollo hasta la entrega al cliente, asegurando soluciones escalables y funcionales que respondieran a necesidades concretas." :
-                "⁃\tActed as technical lead across multiple projects in diverse areas and technologies, including BI implementations and SharePoint solutions.\n⁃\t- Participated in the full lifecycle of software projects—from architecture and development to client delivery—ensuring scalable and functional solutions aligned with specific business needs.",
+                "⁃\tActed as technical lead across multiple projects in diverse areas and technologies, including BI implementations and SharePoint solutions.\n⁃\tParticipated in the full lifecycle of software projects—from architecture and development to client delivery—ensuring scalable and functional solutions aligned with specific business needs.",
             projects: [],
             technologies: [
                 "SQL Server",
