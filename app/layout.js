@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-    title: "Portfolio de Rafael Morales Cancio | Desarrollador de Software",
+    title: "Portfolio de Rafael Morales | Desarrollador de Software",
     description:
-        "Portfolio profesional de Rafael Morales, desarrollador de software con experiencia en desarrollo web y aplicaciones móviles.",
+        "Portfolio profesional de Rafael Morales, desarrollador (SQL, C#, Web) con experiencia en Tecnologias Microsoft.",
 };
 
 export default function RootLayout({ children }) {
