@@ -2,13 +2,14 @@
 
 Esta es una plantilla de portfolio web personal desarrollada con [Next.js](https://nextjs.org), diseñada para ser fácilmente personalizable y reutilizable.
 
-Si estás viendo este repositorio a través de mi canal de YouTube, ¡bienvenido! Esta plantilla es parte de un tutorial donde te muestro cómo crear tu propio portfolio web profesional. Puedes usar esta plantilla como base para tu propio proyecto.
+Si estás viendo este repositorio lo vi en YouTube.  Gracias a [just a dev](https://www.youtube.com/@goyo_is_a_dev), ¡bienvenido! Esta plantilla es parte de un tutorial donde te muestro cómo crear tu propio portfolio web profesional. Puedes usar esta plantilla como base para tu propio proyecto.
 
 ## ✨ Características
 
 -   **Diseño Responsivo:** Experiencia de usuario perfecta en todos los dispositivos
 -   **Secciones Personalizables:** Presentación, proyectos, habilidades, experiencia y contacto
 -   **Fácil de Personalizar:** Estructura clara y documentada para modificar según tus necesidades
+-   **Soporte multi-idioma:** Ingles y Español (agregado por mi)
 
 ## 🛠️ Tecnologías Utilizadas
 
