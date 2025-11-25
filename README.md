@@ -40,7 +40,7 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el 
 
 ## 🚀 Despliegue
 
-La forma más sencilla de desplegar tu portfolio es utilizando [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+La forma más sencilla de desplegar tu portfolio es utilizando [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app).
 
 ## 📝 Licencia
 
