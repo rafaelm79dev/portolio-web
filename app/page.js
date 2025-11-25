@@ -40,8 +40,8 @@ export default function Home() {
             title: language === "en" ? "Backend Developer" : "Desarrollador Backend",
             company: "Ethofy - USA",
             period: "Nov. 2025 - Jun. 2025",
-            description: language === "en" ? "⁃\tDesigned and implemented data analytics dashboards in Power BI connected to SQL Server, MySQL, Web Services, and Excel, reducing report generation times and enhancing executive decision-making.\n⁃\tDeveloped SharePoint solutions (2013–Online), including intranet portals and public content platforms, which improved information accessibility and user engagement.\n⁃\tProvided consulting services to various clients, ensuring solutions aligned with business objectives and operational efficiency improvements.\n⁃\tManaged and executed data migration projects in SharePoint, integrating with third-party platforms and databases while ensuring data integrity.\n⁃\tSupported data warehouses and relational databases. Designed and executed ETL processes, optimizing performance and applying best practices that improved system reliability and response times." :
-                "\t⁃Desarrolle projectos en .NET utilizando C#, contribuyendo a la escalabidad y estabilidad del producto.\n\t⁃Mantuve y optimicé el Data Warehouses en SQL Server, mejorando la eficiencia en el acceso a datos críticos para la toma de decisiones e informes solicitados por Cliente.\n\t⁃Implementé desarrollos en SQL Server mediante procedimientos almacenados, funciones y vistas, lo que permitió automatizar procesos y reducir errores operativos.\n\t⁃Diseñé e implementé procesos ETL con SQL Server Integration Services (SSIS), logrando una integración de datos más confiable y ágil entre sistemas publicandolos en Azure Data Factory.\n\t⁃Elaboré informes con SQL Server Reporting Services (SSRS) y Power BI, facilitando el análisis de indicadores clave y la generación de reportes estratégicos.",
+            description: language === "en" ? "⁃\tDeveloped APIs in .NET environments using C#, contributing to product scalability and stability.\n⁃\tMaintained and optimized Data Warehouses in SQL Server, improving access to critical data for decision-making and client-requested reports.\n⁃\tImplemented SQL Server solutions through stored procedures, functions, and views, enabling process automation and reducing operational errors.\n⁃\tDesigned and implemented ETL processes with SQL Server Integration Services (SSIS), achieving more reliable and agile data integration across systems, publishing them via Azure Data Factory.\n⁃\tCreated business reports using SQL Server Reporting Services (SSRS) and Power BI, supporting key performance indicator analysis and strategic reporting." :
+                "⁃\tDesarrollé APIs en entornos .NET con C#, contribuyendo a la escalabidad y estabilidad del producto.\n⁃\tRealice mantenimiento y optimización de Data Warehouses en SQL Server, mejorando el rendimiento de consultas y la eficiencia en el procesamiento de datos.\n⁃\tDesarrollo avanzado en SQL: diseño y mantenimiento de procedimientos almacenados, funciones y vistas para soportar lógica de negocio y análisis complejos.\n⁃\tDiseño e implementación de procesos ETL con SQL Server Integration Services (SSIS), facilitando la integración eficiente de datos desde múltiples fuentes.  Administracion desde Azure Data Factory.\n⁃\tGeneración de informes empresariales mediante SQL Server Reporting Services (SSRS), brindando visualizaciones claras para la toma de decisiones.",
             projects: [],
             technologies: [
                 "SQL Server",
@@ -71,7 +71,7 @@ export default function Home() {
             title: language === "en" ? "Technical Specialist" : "Especialista Técnico",
             company: "Infocorp - Uruguay",
             period: language === "en" ? "May. 2004 - Apr. 2017" : "May. 2004 - Abr. 2017",
-            description: language === "en" ? "⁃\tActué como referente técnico en diferentes proyectos. Proyectos en diferentes areas y tecnologias.  Implementaciones de Poryectos BI y soluciones SharePoint.\n⁃\tParticipé en todo el ciclo de vida de proyectos de software, desde la arquitectura y el desarrollo hasta la entrega al cliente, asegurando soluciones escalables y funcionales que respondieran a necesidades concretas." :
+            description: language === "es" ? "⁃\tActué como referente técnico en diferentes proyectos. Colaboré en diferentes areas y tecnologias.  Realicé implementaciones de Proyectos BI y soluciones SharePoint.\n⁃\tParticipé en todo el ciclo de vida de proyectos de software, desde la arquitectura y el desarrollo hasta la entrega al cliente, asegurando soluciones escalables y funcionales que respondieran a necesidades concretas." :
                 "⁃\tActed as technical lead across multiple projects in diverse areas and technologies, including BI implementations and SharePoint solutions.\n⁃\t- Participated in the full lifecycle of software projects—from architecture and development to client delivery—ensuring scalable and functional solutions aligned with specific business needs.",
             projects: [],
             technologies: [
@@ -171,7 +171,7 @@ export default function Home() {
 
             {/* Work Experience Section*/}
             <section id="experience">
-                <div className="container mx-auto py-12">
+                <div className="container mx-auto pt-12 pb-2">
                     <div className="text-center">
                         <h2 className="text-2xl md:text-4xl font-bold">
                             {t("experience.works")}
