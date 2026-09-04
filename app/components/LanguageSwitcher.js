@@ -10,7 +10,7 @@ export default function LanguageSwitcher() {
             <button
                 onClick={() => changeLanguage("en")}
                 className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${language === "en"
-                    ? "bg-blue-600 text-white"
+                    ? "bg-accent text-foreground"
                     : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
             >
@@ -19,7 +19,7 @@ export default function LanguageSwitcher() {
             <button
                 onClick={() => changeLanguage("es")}
                 className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${language === "es"
-                    ? "bg-blue-600 text-white"
+                    ? "bg-accent text-foreground"
                     : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
             >

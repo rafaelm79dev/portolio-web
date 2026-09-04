@@ -9,8 +9,7 @@ export default {
         "Análisis de Datos e Informes",
         "Desarrollo y Administración de SharePoint",
         "Desarrollo Full Stack",
-        "Trabajo en Equipo",
-        "Comunicación"
+        "Metodologías Ágiles y Scrum"
     ],
     "sections": {
         "experience": "Experiencia Laboral",
@@ -18,7 +17,8 @@ export default {
         "skills": "Conocimientos"
     },
     "profile": {
-        "description": "Desarrollador Freelance con más de 20 años de experiencia entregando soluciones escalables y de alto impacto en diversos sectores. Especializado en tecnologías de Microsoft (.NET/C#, SQL Server, SharePoint, Azure) y plataformas de Business Intelligence (Power BI, SSIS, SSRS).\n⁃\tLideré el desarrollo de integraciones de sistemas y soluciones de BI que mejoraron la toma de decisiones y la eficiencia operativa.\n⁃\tApliqué las mejores prácticas de desarrollo para garantizar escalabilidad, mantenibilidad y seguridad en todas las fases de los proyectos.\n⁃\tTraduje requerimientos de negocio en soluciones técnicas accionables, colaborando de manera efectiva con diversos equipos.\n⁃\tDiseñé e implementé soluciones en entornos colaborativos que incrementaron la productividad de los equipos.\n⁃\tMejorando activamente el nivel de inglés (B1–B2) para asegurar una comunicación clara en entornos globales."
+        "tagline": "Más de 20 años convirtiendo datos en decisiones.",
+        "description": "Desarrollador IT con más de 20 años de experiencia en proyectos de diversa envergadura y complejidad. Experiencia en tecnologías Microsoft (.NET/C#, SharePoint, Azure), soluciones de Business Intelligence (Power BI, SQL Server, SSIS, SSRS) y entornos de colaboración. He trabajado en equipos multidisciplinarios a lo largo de todo el ciclo de vida de los proyectos: relevamiento de requerimientos, diseño de soluciones, desarrollo, implementación y soporte. Disfruto trabajar con datos y apoyar la toma de decisiones de las empresas, y estoy comprometido con la mejora continua y las mejores prácticas de desarrollo."
     },
     "experience": {
         "projects": "Proyectos:",
@@ -27,6 +27,11 @@ export default {
     "personalProjects": "Proyectos Personales",
     "personalProjectsDescription": "De manera paralela a los trabajos que he ido desempeñando, he desarrollado varios proyectos personales tanto para probarme a mí mismo y ver de qué soy capaz, como para aplicar mis conocimientos y aprender nuevas tecnologías.",
     "personalProjectsDetail": "Aquí puedes ver algunos de ellos:",
+    "contact": {
+        "title": "¿Tenés un proyecto en mente?",
+        "description": "Estoy disponible para proyectos freelance y nuevas oportunidades. LinkedIn es la mejor forma de contactarme — escribime y hablamos.",
+        "cta": "Escribime en LinkedIn"
+    },
     "footer": {
         "rights": "Todos los derechos reservados."
     }
