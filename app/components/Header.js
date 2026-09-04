@@ -13,7 +13,7 @@ export default function Header() {
     const { t } = useTranslations();
     // Developer information
     const developerName = "Rafael Morales";
-    const jobTitle = "Software Developer";
+    const jobTitle = t("header.jobTitle");
 
     // Social media links
     const socialLinks = [

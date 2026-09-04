@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Header from "./components/Header";
 import ExperienceItem from "./components/ExperienceItem";
 import ProjectItem from "./components/ProjectItem";
@@ -9,17 +10,20 @@ export default function Home() {
     const { t, language } = useTranslations();
 
     const techinicalSkills = [
-        "SQL Server",
         "Power BI",
-        "SSIS / SSRS",
-        "Azure",
-        "Python",
+        "SQL Server",
+        "SSRS",
+        "SSIS",
+        "SSAS",
         "C#",
+        "ASP.NET",
+        "MVC",
         "SharePoint",
         "Power Apps",
         "Power Automate",
         "MySQL",
-        "Git"
+        "Git",
+        "Azure"
     ];
     // Obtener las competencias desde las traducciones
     const coreCompetencies = t("coreCompetenciesList") || [];
@@ -37,9 +41,40 @@ export default function Home() {
             image: "/company_logo/freelancer.png",
         },
         {
+            title: language === "en" ? "Power BI & SharePoint Consultant" : "Consultor Power BI & SharePoint",
+            company: "QBIC - Uruguay",
+            period: language === "en" ? "Mar. 2026 - Present" : "Mar. 2026 - Presente",
+            description: language === "en" ? "⁃\tDevelop executive reports and dashboards in Power BI, giving management real-time visibility into key metrics for faster decision-making.\n⁃\tConnect and integrate multiple data sources—including SQL Server and SharePoint—consolidating previously scattered business information into a single reliable view.\n⁃\tModel data and build DAX measures to enable deeper, more advanced analysis beyond standard reporting." :
+                "⁃\tDesarrollo de reportes y tableros ejecutivos en Power BI, brindando a la gerencia visibilidad en tiempo real de métricas clave para una toma de decisiones más ágil.\n⁃\tConexión e integración de múltiples fuentes de datos —incluyendo SQL Server y SharePoint— consolidando información de negocio previamente dispersa en una única vista confiable.\n⁃\tModelado de datos y creación de medidas DAX para habilitar análisis más profundos y avanzados más allá de los reportes estándar.",
+            projects: [],
+            technologies: ["Power BI", "SQL Server", "SharePoint", "DAX"],
+            image: "/company_logo/qbic.png",
+        },
+        {
+            title: language === "en" ? "Power BI & SharePoint Consultant" : "Consultor Power BI & SharePoint",
+            company: "Fibase - Uruguay",
+            period: language === "en" ? "Jul. 2018 - Present" : "Jul. 2018 - Presente",
+            description: language === "en" ? "⁃\tDevelop Power BI solutions that give leadership direct visibility into business performance for faster decision-making.\n⁃\tSupport Project Server (PWA), enabling more reliable project tracking and management.\n⁃\tSupport on-premises SharePoint portals and solutions, keeping critical internal systems running reliably.\n⁃\tAutomate processes with Power Automate and build applications with Power Apps, replacing manual workflows with faster, more consistent processes." :
+                "⁃\tDesarrollo de soluciones en Power BI que brindan a la dirección visibilidad directa del desempeño del negocio para una toma de decisiones más ágil.\n⁃\tSoporte a Project Server (PWA), permitiendo un seguimiento y gestión de proyectos más confiable.\n⁃\tSoporte a portales y soluciones de SharePoint on-premises, manteniendo en funcionamiento sistemas internos críticos.\n⁃\tAutomatización de procesos con Power Automate y desarrollo de aplicaciones con Power Apps, reemplazando flujos de trabajo manuales por procesos más rápidos y consistentes.",
+            projects: [],
+            technologies: ["Power BI", "SharePoint", "Power Automate", "Power Apps"],
+            image: "/company_logo/fibase.avif",
+            logoBackground: "bg-foreground",
+        },
+        {
+            title: language === "en" ? "SharePoint & Power Platform Consultant" : "Consultor SharePoint & Power Platform",
+            company: "Arnaldo C. Castro - Uruguay",
+            period: language === "en" ? "Aug. 2019 - Feb. 2026" : "Ago. 2019 - Feb. 2026",
+            description: language === "en" ? "⁃\tLed the migration of SharePoint environments from on-premise to Online with zero disruption to ongoing operations.\n⁃\tAutomated business processes using Power Automate, reducing manual, repetitive work.\n⁃\tDeveloped internal management applications using Power Apps and Power Automate, replacing manual tracking for internal projects." :
+                "⁃\tLideré la migración de entornos SharePoint de on-premise a Online sin interrupciones en la operación.\n⁃\tAutomatización de procesos de negocio con Power Automate, reduciendo trabajo manual y repetitivo.\n⁃\tDesarrollo de aplicaciones internas de gestión con Power Apps y Power Automate, reemplazando el seguimiento manual de proyectos internos.",
+            projects: [],
+            technologies: ["SharePoint", "Power Automate", "Power Apps"],
+            image: "/company_logo/arnaldocastro.png",
+        },
+        {
             title: language === "en" ? "Backend Developer" : "Desarrollador Backend",
             company: "Ethofy - USA",
-            period: "Nov. 2025 - Jun. 2025",
+            period: "Nov. 2021 - Jun. 2025",
             description: language === "en" ? "⁃\tDeveloped APIs in .NET environments using C#, contributing to product scalability and stability.\n⁃\tMaintained and optimized Data Warehouses in SQL Server, improving access to critical data for decision-making and client-requested reports.\n⁃\tImplemented SQL Server solutions through stored procedures, functions, and views, enabling process automation and reducing operational errors.\n⁃\tDesigned and implemented ETL processes with SQL Server Integration Services (SSIS), achieving more reliable and agile data integration across systems, publishing them via Azure Data Factory.\n⁃\tCreated business reports using SQL Server Reporting Services (SSRS) and Power BI, supporting key performance indicator analysis and strategic reporting." :
                 "⁃\tDesarrollé APIs en entornos .NET con C#, contribuyendo a la escalabidad y estabilidad del producto.\n⁃\tRealice mantenimiento y optimización de Data Warehouses en SQL Server, mejorando el rendimiento de consultas y la eficiencia en el procesamiento de datos.\n⁃\tDesarrollo avanzado en SQL: diseño y mantenimiento de procedimientos almacenados, funciones y vistas para soportar lógica de negocio y análisis complejos.\n⁃\tDiseño e implementación de procesos ETL con SQL Server Integration Services (SSIS), facilitando la integración eficiente de datos desde múltiples fuentes.  Administracion desde Azure Data Factory.\n⁃\tGeneración de informes empresariales mediante SQL Server Reporting Services (SSRS), brindando visualizaciones claras para la toma de decisiones.",
             projects: [],
@@ -53,26 +88,11 @@ export default function Home() {
             image: "/company_logo/ethofy.png",
         },
         {
-            title: language === "en" ? "Backend Developer" : "Desarrollador Backend",
-            company: "Finanzas365 - Uruguay",
-            period: language === "en" ? "Jan. 2018 - Dec. 2024" : "Ene. 2018 - Dic. 2024",
-            description: language === "en" ? "⁃\tCo-founded and led the technical development of an analytics and control platform for SMEs, driving operational efficiency and strategic management.\n⁃\tOversaw platform architecture, infrastructure decisions, and continuous integration of user feedback, ensuring scalability and ongoing improvement.\n⁃\tCollaborated closely with clients to design customized dashboards and reports that strengthened financial decision-making and management control." :
-                "⁃\tCofundé y lideré el desarrollo técnico de una plataforma de análisis y control orientada a PYMEs, impulsando la eficiencia operativa y la gestión estratégica.\n⁃\tSupervisé la arquitectura de la plataforma, las decisiones de infraestructura y la integración continua del feedback de usuarios, garantizando escalabilidad y mejora constante.\n⁃\tColaboré estrechamente con clientes para diseñar tableros e informes personalizados que fortalecieron la toma de decisiones financieras y el control de gestión.",
-            projects: [],
-            technologies: [
-                "MySQL",
-                "C#",
-                "Power BI"
-            ],
-            image: "/company_logo/Finanzas365.png",
-        }
-        ,
-        {
             title: language === "en" ? "Technical Specialist" : "Especialista Técnico",
             company: "Infocorp - Uruguay",
-            period: language === "en" ? "May. 2004 - Apr. 2017" : "May. 2004 - Abr. 2017",
-            description: language === "es" ? "⁃\tActué como referente técnico en diferentes proyectos. Colaboré en diferentes areas y tecnologias.  Realicé implementaciones de Proyectos BI y soluciones SharePoint.\n⁃\tParticipé en todo el ciclo de vida de proyectos de software, desde la arquitectura y el desarrollo hasta la entrega al cliente, asegurando soluciones escalables y funcionales que respondieran a necesidades concretas." :
-                "⁃\tActed as technical lead across multiple projects in diverse areas and technologies, including BI implementations and SharePoint solutions.\n⁃\tParticipated in the full lifecycle of software projects—from architecture and development to client delivery—ensuring scalable and functional solutions aligned with specific business needs.",
+            period: language === "en" ? "2004 - 2018" : "2004 - 2018",
+            description: language === "en" ? "⁃\tActed as technical lead across multiple projects in diverse areas and technologies, including BI implementations and SharePoint solutions.\n⁃\tParticipated in the full lifecycle of software projects ensuring scalable and functional solutions aligned with specific business needs." :
+                "⁃\tActué como referente técnico en múltiples proyectos, en diversas áreas y tecnologías, incluyendo implementaciones de BI y soluciones SharePoint.\n⁃\tParticipé en todo el ciclo de vida de proyectos de software, asegurando soluciones escalables y funcionales alineadas con necesidades concretas del negocio.",
             projects: [],
             technologies: [
                 "SQL Server",
@@ -88,6 +108,13 @@ export default function Home() {
 
     // Sample project data
     const projects = [
+        {
+            image: "/projects_logo/mispedidos.png",
+            displayName: "Mis Pedidos",
+            description: language === "en" ? "Internal web application (personal project) to manage a monthly employee purchase benefit with spending cap, approval control, and full traceability. Built in Blazor Server (.NET 10) on top of Microsoft Graph API and SharePoint Lists as backend, with custom authentication, a full admin panel, and an audit system. Developed with the assistance of Claude AI." :
+                "Aplicación web interna (proyecto personal) para gestionar un beneficio de compra mensual a empleados con tope de gasto, control de aprobaciones y trazabilidad completa. Desarrollada en Blazor Server (.NET 10) sobre Microsoft Graph API y SharePoint Lists como backend, con autenticación propia, panel de administración completo y sistema de auditoría. Desarrollada con la asistencia de Claude AI.",
+            technologies: ["Blazor Server", ".NET 10", "Microsoft Graph API", "SharePoint Lists", "Claude AI"]
+        },
         {
             image: "/projects_logo/puntoDeOro.jpg",
             displayName: "Punto de Oro",
@@ -118,10 +145,15 @@ export default function Home() {
             <Header />
             {/* Profile Section */}
             <section id="profile" className="px-4 md:px-6">
-                <div className="container mx-auto py-8 md:py-3">
-                    <p className="text-sm md:text-base lg:text-lg whitespace-pre-wrap text-justify leading-relaxed">
-                        {t("profile.description")}
+                <div className="container mx-auto py-10 md:py-14">
+                    <p className="text-xl md:text-3xl font-bold text-balance leading-snug mb-5 md:mb-8">
+                        {t("profile.tagline")}
                     </p>
+                    <div className="border-l-4 border-accent bg-white/70 rounded-r-xl px-5 py-4 md:px-8 md:py-6 shadow-sm">
+                        <p className="text-sm md:text-base lg:text-lg whitespace-pre-wrap text-justify leading-relaxed text-foreground/90">
+                            {t("profile.description")}
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -137,7 +169,7 @@ export default function Home() {
                         {techinicalSkills.map((skill, index) => (
                             <span
                                 key={index}
-                                className="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full px-4 md:px-6 py-2 text-sm md:text-base font-semibold shadow-md hover:shadow-lg transition-shadow"
+                                className="bg-accent text-foreground rounded-full px-4 md:px-6 py-2 text-sm md:text-base font-semibold shadow-md hover:shadow-lg transition-shadow"
                             >
                                 {skill}
                             </span>
@@ -218,6 +250,28 @@ export default function Home() {
                                 </div>
                             );
                         })}
+                    </div>
+                </div>
+            </section>
+
+            {/* Contact Section */}
+            <section id="contact" className="px-4 md:px-6">
+                <div className="container mx-auto py-12 md:py-16">
+                    <div className="rounded-2xl bg-foreground text-background text-center px-6 py-10 md:px-12 md:py-14 shadow-xl">
+                        <h2 className="text-2xl md:text-4xl font-bold mb-3 text-balance">
+                            {t("contact.title")}
+                        </h2>
+                        <p className="text-sm md:text-lg text-background/80 max-w-xl mx-auto mb-8">
+                            {t("contact.description")}
+                        </p>
+                        <Link
+                            href="https://www.linkedin.com/in/rafaelm79"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 bg-accent text-foreground rounded-full px-6 md:px-8 py-3 text-sm md:text-base font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
+                        >
+                            {t("contact.cta")}
+                        </Link>
                     </div>
                 </div>
             </section>

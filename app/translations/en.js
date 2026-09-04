@@ -9,8 +9,7 @@ export default {
         "Data Analytics & Reporting",
         "SharePoint Development & Administration",
         "Full Stack Development",
-        "Teamwork",
-        "Communication"
+        "Agile & Scrum Methodologies"
     ],
     "sections": {
         "experience": "Work Experience",
@@ -18,7 +17,8 @@ export default {
         "skills": "Skills"
     },
     "profile": {
-        "description": "Freelance Developer with over 20 years of experience delivering scalable, high-impact solutions across diverse sectors. Specialized in Microsoft technologies (.NET/C#, SQL Server, SharePoint, Azure) and Business Intelligence platforms (Power BI, SSIS, SSRS).\n⁃\tLed end-to-end development of system integrations and BI solutions that enhanced decision-making and operational efficiency.\n⁃\tApplied best development practices to ensure scalability, maintainability, and security throughout all project phases.\n⁃\tTranslated business requirements into actionable technical solutions, collaborating effectively with diverse teams.\n⁃\tDesigned and implemented collaborative environments that improved the productivity of multidisciplinary teams.\n⁃\tActively improving English proficiency (B1–B2) to ensure clear communication in global environments."
+        "tagline": "20+ years turning data into decisions.",
+        "description": "IT developer with over 20 years of experience in projects of varying sizes and complexity. Experience in Microsoft technologies (.NET/C#, SharePoint, Azure), business intelligence solutions (Power BI, SQL Server, SSIS, SSRS), and collaboration environments. I have worked on multidisciplinary teams throughout the entire project lifecycle: requirements gathering, solution design, development, deployment, and support. I enjoy working with data and supporting a company's decision-making process, and I'm committed to continuous improvement and best development practices."
     },
     "experience": {
         "projects": "Projects:",
@@ -27,6 +27,11 @@ export default {
     "personalProjects": "Personal Projects",
     "personalProjectsDescription": "Parallel to the jobs I have been working on, I have developed several personal projects both to challenge myself and see what I'm capable of, as well as to apply my knowledge and learn new technologies.",
     "personalProjectsDetail": "Here you can see some of them:",
+    "contact": {
+        "title": "Have a project in mind?",
+        "description": "I'm open to freelance work and new opportunities. LinkedIn is the best way to reach me — send a message and let's talk.",
+        "cta": "Message me on LinkedIn"
+    },
     "footer": {
         "rights": "All rights reserved."
     }

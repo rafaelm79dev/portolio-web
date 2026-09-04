@@ -63,7 +63,7 @@ export default function ProjectItem({ project }) {
                     {technologies.map((tech, index) => (
                         <span
                             key={index}
-                            className="bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full px-3 py-1 text-[10px] md:text-xs font-semibold shadow-sm"
+                            className="bg-accent text-foreground rounded-full px-3 py-1 text-[10px] md:text-xs font-semibold shadow-sm"
                         >
                             {tech}
                         </span>

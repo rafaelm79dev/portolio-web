@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="es">
             <body
-                className={`${inter.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-[#fafafc] via-[#e2e2e2] to-[#cbd5e1]`}
+                className={`${inter.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
             >
                 <LanguageProviderWrapper>
                     <MetadataUpdater />
