@@ -50,15 +50,15 @@ export default function Header() {
                             <h1 className="text-lg md:text-4xl font-bold leading-tight">
                                 {developerName}
                             </h1>
-                            <div className="relative w-4 h-4 md:w-6 md:h-6 inline-block flex-shrink-0">
+                            <div className="relative w-3 h-3 md:w-5 md:h-5 rounded-full overflow-hidden border border-gray-300 inline-block flex-shrink-0">
                                 <Image
                                     src="/uruguay-flag.svg"
                                     alt="Uruguay flag"
                                     fill
-                                    className="object-contain"
+                                    className="object-cover"
                                 />
                             </div>
-                            <div className="relative w-4 h-4 md:w-6 md:h-6 inline-block flex-shrink-0">
+                            <div className="relative w-3 h-3 md:w-5 md:h-5 inline-block flex-shrink-0">
                                 <Image
                                     src="/mate.png"
                                     alt="Mate"

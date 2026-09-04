@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export default function LanguageSwitcher() {
@@ -9,21 +10,35 @@ export default function LanguageSwitcher() {
         <div className="flex items-center gap-2">
             <button
                 onClick={() => changeLanguage("en")}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${language === "en"
-                    ? "bg-accent text-foreground"
-                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                aria-label="English"
+                aria-pressed={language === "en"}
+                className={`relative w-7 h-7 md:w-9 md:h-9 rounded-full overflow-hidden border-2 transition-all ${language === "en"
+                    ? "border-accent scale-105"
+                    : "border-gray-300 opacity-60 hover:opacity-100"
                     }`}
             >
-                EN
+                <Image
+                    src="/usa-flag.svg"
+                    alt="English"
+                    fill
+                    className="object-cover"
+                />
             </button>
             <button
                 onClick={() => changeLanguage("es")}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${language === "es"
-                    ? "bg-accent text-foreground"
-                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                aria-label="Español"
+                aria-pressed={language === "es"}
+                className={`relative w-7 h-7 md:w-9 md:h-9 rounded-full overflow-hidden border-2 transition-all ${language === "es"
+                    ? "border-accent scale-105"
+                    : "border-gray-300 opacity-60 hover:opacity-100"
                     }`}
             >
-                ES
+                <Image
+                    src="/spain-flag.svg"
+                    alt="Español"
+                    fill
+                    className="object-cover"
+                />
             </button>
         </div>
     );

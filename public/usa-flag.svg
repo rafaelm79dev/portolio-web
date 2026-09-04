@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#B22234"/>
+  <g fill="#fff">
+    <rect y="46.2" width="900" height="46.2"/>
+    <rect y="138.6" width="900" height="46.2"/>
+    <rect y="231" width="900" height="46.2"/>
+    <rect y="323.4" width="900" height="46.2"/>
+    <rect y="415.8" width="900" height="46.2"/>
+    <rect y="508.2" width="900" height="46.2"/>
+  </g>
+  <rect width="360" height="323.4" fill="#3C3B6E"/>
+  <g fill="#fff">
+    <circle cx="30" cy="27" r="9"/><circle cx="90" cy="27" r="9"/><circle cx="150" cy="27" r="9"/><circle cx="210" cy="27" r="9"/><circle cx="270" cy="27" r="9"/><circle cx="330" cy="27" r="9"/>
+    <circle cx="60" cy="54" r="9"/><circle cx="120" cy="54" r="9"/><circle cx="180" cy="54" r="9"/><circle cx="240" cy="54" r="9"/><circle cx="300" cy="54" r="9"/>
+    <circle cx="30" cy="81" r="9"/><circle cx="90" cy="81" r="9"/><circle cx="150" cy="81" r="9"/><circle cx="210" cy="81" r="9"/><circle cx="270" cy="81" r="9"/><circle cx="330" cy="81" r="9"/>
+    <circle cx="60" cy="108" r="9"/><circle cx="120" cy="108" r="9"/><circle cx="180" cy="108" r="9"/><circle cx="240" cy="108" r="9"/><circle cx="300" cy="108" r="9"/>
+    <circle cx="30" cy="135" r="9"/><circle cx="90" cy="135" r="9"/><circle cx="150" cy="135" r="9"/><circle cx="210" cy="135" r="9"/><circle cx="270" cy="135" r="9"/><circle cx="330" cy="135" r="9"/>
+    <circle cx="60" cy="162" r="9"/><circle cx="120" cy="162" r="9"/><circle cx="180" cy="162" r="9"/><circle cx="240" cy="162" r="9"/><circle cx="300" cy="162" r="9"/>
+    <circle cx="30" cy="189" r="9"/><circle cx="90" cy="189" r="9"/><circle cx="150" cy="189" r="9"/><circle cx="210" cy="189" r="9"/><circle cx="270" cy="189" r="9"/><circle cx="330" cy="189" r="9"/>
+    <circle cx="60" cy="216" r="9"/><circle cx="120" cy="216" r="9"/><circle cx="180" cy="216" r="9"/><circle cx="240" cy="216" r="9"/><circle cx="300" cy="216" r="9"/>
+    <circle cx="30" cy="243" r="9"/><circle cx="90" cy="243" r="9"/><circle cx="150" cy="243" r="9"/><circle cx="210" cy="243" r="9"/><circle cx="270" cy="243" r="9"/><circle cx="330" cy="243" r="9"/>
+    <circle cx="60" cy="270" r="9"/><circle cx="120" cy="270" r="9"/><circle cx="180" cy="270" r="9"/><circle cx="240" cy="270" r="9"/><circle cx="300" cy="270" r="9"/>
+    <circle cx="30" cy="297" r="9"/><circle cx="90" cy="297" r="9"/><circle cx="150" cy="297" r="9"/><circle cx="210" cy="297" r="9"/><circle cx="270" cy="297" r="9"/><circle cx="330" cy="297" r="9"/>
+  </g>
+</svg>
