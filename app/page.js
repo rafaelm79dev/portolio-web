@@ -145,15 +145,10 @@ export default function Home() {
             <Header />
             {/* Profile Section */}
             <section id="profile" className="px-4 md:px-6">
-                <div className="container mx-auto py-10 md:py-14">
-                    <p className="text-xl md:text-3xl font-bold text-balance leading-snug mb-5 md:mb-8">
-                        {t("profile.tagline")}
+                <div className="container mx-auto py-8 md:py-3">
+                    <p className="text-sm md:text-base lg:text-lg whitespace-pre-wrap text-justify leading-relaxed">
+                        {t("profile.description")}
                     </p>
-                    <div className="border-l-4 border-accent bg-white/70 rounded-r-xl px-5 py-4 md:px-8 md:py-6 shadow-sm">
-                        <p className="text-sm md:text-base lg:text-lg whitespace-pre-wrap text-justify leading-relaxed text-foreground/90">
-                            {t("profile.description")}
-                        </p>
-                    </div>
                 </div>
             </section>
 

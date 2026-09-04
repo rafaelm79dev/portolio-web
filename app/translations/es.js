@@ -1,6 +1,6 @@
 export default {
     "header": {
-        "jobTitle": "Desarrollador de Software"
+        "jobTitle": "Consultor Independiente .NET & BI | Desarrollo Backend, SQL Server, Power BI, SharePoint | C# | Azure"
     },
     "technicalSkills": "Habilidades Técnicas",
     "coreCompetencies": "Competencias Clave",
@@ -17,7 +17,6 @@ export default {
         "skills": "Conocimientos"
     },
     "profile": {
-        "tagline": "Más de 20 años convirtiendo datos en decisiones.",
         "description": "Desarrollador IT con más de 20 años de experiencia en proyectos de diversa envergadura y complejidad. Experiencia en tecnologías Microsoft (.NET/C#, SharePoint, Azure), soluciones de Business Intelligence (Power BI, SQL Server, SSIS, SSRS) y entornos de colaboración. He trabajado en equipos multidisciplinarios a lo largo de todo el ciclo de vida de los proyectos: relevamiento de requerimientos, diseño de soluciones, desarrollo, implementación y soporte. Disfruto trabajar con datos y apoyar la toma de decisiones de las empresas, y estoy comprometido con la mejora continua y las mejores prácticas de desarrollo."
     },
     "experience": {

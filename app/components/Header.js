@@ -46,13 +46,11 @@ export default function Header() {
                         />
                     </div>
                     <div className="flex flex-col">
-                        <h1 className="text-lg md:text-4xl font-bold leading-tight">
-                            {developerName}
-                        </h1>
-                        <div className="flex items-center gap-2 text-sm md:text-xl text-foreground/70">
-                            {jobTitle}
-                            <span className="text-lg md:text-xl text-gray-400 mx-2">|</span>
-                            <div className="relative w-4 h-4 md:w-6 md:h-6 inline-block">
+                        <div className="flex items-center gap-2">
+                            <h1 className="text-lg md:text-4xl font-bold leading-tight">
+                                {developerName}
+                            </h1>
+                            <div className="relative w-4 h-4 md:w-6 md:h-6 inline-block flex-shrink-0">
                                 <Image
                                     src="/uruguay-flag.svg"
                                     alt="Uruguay flag"
@@ -60,7 +58,7 @@ export default function Header() {
                                     className="object-contain"
                                 />
                             </div>
-                            <div className="relative w-4 h-4 md:w-6 md:h-6 inline-block" >
+                            <div className="relative w-4 h-4 md:w-6 md:h-6 inline-block flex-shrink-0">
                                 <Image
                                     src="/mate.png"
                                     alt="Mate"
@@ -69,6 +67,9 @@ export default function Header() {
                                 />
                             </div>
                         </div>
+                        <p className="text-[11px] md:text-sm text-foreground/70 leading-snug max-w-md">
+                            {jobTitle}
+                        </p>
                     </div>
                 </div>
 
