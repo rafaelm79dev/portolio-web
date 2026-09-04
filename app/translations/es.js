@@ -17,7 +17,8 @@ export default {
         "skills": "Conocimientos"
     },
     "profile": {
-        "description": "Desarrollador IT con más de 20 años de experiencia en proyectos de diversa envergadura y complejidad. Experiencia en tecnologías Microsoft (.NET/C#, SharePoint, Azure), soluciones de Business Intelligence (Power BI, SQL Server, SSIS, SSRS) y entornos de colaboración. He trabajado en equipos multidisciplinarios a lo largo de todo el ciclo de vida de los proyectos: relevamiento de requerimientos, diseño de soluciones, desarrollo, implementación y soporte. Disfruto trabajar con datos y apoyar la toma de decisiones de las empresas, y estoy comprometido con la mejora continua y las mejores prácticas de desarrollo."
+        "description": "Desarrollador IT con más de 20 años de experiencia en proyectos de diversa envergadura y complejidad. Experiencia en tecnologías Microsoft (.NET/C#, SharePoint, Azure), soluciones de Business Intelligence (Power BI, SQL Server, SSIS, SSRS) y entornos de colaboración. He trabajado en equipos multidisciplinarios a lo largo de todo el ciclo de vida de los proyectos: relevamiento de requerimientos, diseño de soluciones, desarrollo, implementación y soporte. Disfruto trabajar con datos y apoyar la toma de decisiones de las empresas, y estoy comprometido con la mejora continua y las mejores prácticas de desarrollo.",
+        "languages": "Idiomas: Español (Nativo) · Inglés (Intermedio–Intermedio Alto, B1–B2, en mejora activa)"
     },
     "experience": {
         "projects": "Proyectos:",
