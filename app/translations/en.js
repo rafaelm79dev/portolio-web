@@ -1,6 +1,6 @@
 export default {
     "header": {
-        "jobTitle": "Software Developer"
+        "jobTitle": "Independent .NET & BI Consultant | Backend Development, SQL Server, Power BI, SharePoint | C# | Azure"
     },
     "technicalSkills": "Technical Skills",
     "coreCompetencies": "Core Competencies",
@@ -17,7 +17,6 @@ export default {
         "skills": "Skills"
     },
     "profile": {
-        "tagline": "20+ years turning data into decisions.",
         "description": "IT developer with over 20 years of experience in projects of varying sizes and complexity. Experience in Microsoft technologies (.NET/C#, SharePoint, Azure), business intelligence solutions (Power BI, SQL Server, SSIS, SSRS), and collaboration environments. I have worked on multidisciplinary teams throughout the entire project lifecycle: requirements gathering, solution design, development, deployment, and support. I enjoy working with data and supporting a company's decision-making process, and I'm committed to continuous improvement and best development practices."
     },
     "experience": {
