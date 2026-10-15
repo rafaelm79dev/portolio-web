@@ -47,10 +47,12 @@ export default function ExperienceItem({ experience }) {
                 </div>
 
                 {/* Description */}
-                {description && (
-                    <p className="mb-6 text-xs md:text-base whitespace-pre-wrap text-justify leading-relaxed">
-                        {description}
-                    </p>
+                {description && description.length > 0 && (
+                    <ul className="mb-6 text-xs md:text-base leading-relaxed list-disc pl-4 md:pl-5 space-y-1.5">
+                        {description.map((line, index) => (
+                            <li key={index}>{line}</li>
+                        ))}
+                    </ul>
                 )}
 
                 {/* Projects list */}

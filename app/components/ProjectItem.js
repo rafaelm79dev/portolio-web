@@ -52,7 +52,7 @@ export default function ProjectItem({ project }) {
 
             {/* Description if available */}
             {description && (
-                <p className="text-xs md:text-sm text-gray-600 text-justify px-2">
+                <p className="text-xs md:text-sm text-gray-600 text-left px-2">
                     {description}
                 </p>
             )}

@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
                 onClick={() => changeLanguage("en")}
                 aria-label="English"
                 aria-pressed={language === "en"}
-                className={`relative w-7 h-7 md:w-9 md:h-9 rounded-full overflow-hidden border-2 transition-all ${language === "en"
+                className={`relative w-7 h-7 md:w-9 md:h-9 rounded-full overflow-hidden border-2 transition ${language === "en"
                     ? "border-accent scale-105"
                     : "border-gray-300 opacity-60 hover:opacity-100"
                     }`}
@@ -28,7 +28,7 @@ export default function LanguageSwitcher() {
                 onClick={() => changeLanguage("es")}
                 aria-label="Español"
                 aria-pressed={language === "es"}
-                className={`relative w-7 h-7 md:w-9 md:h-9 rounded-full overflow-hidden border-2 transition-all ${language === "es"
+                className={`relative w-7 h-7 md:w-9 md:h-9 rounded-full overflow-hidden border-2 transition ${language === "es"
                     ? "border-accent scale-105"
                     : "border-gray-300 opacity-60 hover:opacity-100"
                     }`}

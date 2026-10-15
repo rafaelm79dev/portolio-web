@@ -39,6 +39,13 @@ yarn-error.log*
 # personal files (not for the repo)
 /cv/
 
+# Claude Code local settings
+/.claude/
+
+# locally installed agent skills (npx skills)
+/.agents/
+skills-lock.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

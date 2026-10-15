@@ -1,24 +1,16 @@
 export default {
     "header": {
-        "jobTitle": "Independent .NET & BI Consultant | Backend Development, SQL Server, Power BI, SharePoint | C# | Azure"
+        "jobTitle": "Senior BI Developer | Power BI, SQL Server, SSIS, Azure Data Factory | .NET, SharePoint"
     },
-    "technicalSkills": "Technical Skills",
-    "coreCompetencies": "Core Competencies",
-    "coreCompetenciesList": [
-        "Technical Leadership",
-        "Data Analytics & Reporting",
-        "SharePoint Development & Administration",
-        "Full Stack Development",
-        "Agile & Scrum Methodologies"
-    ],
+    "technicalSkills": "Skills",
     "sections": {
         "experience": "Work Experience",
         "projects": "Personal Projects",
         "skills": "Skills"
     },
     "profile": {
-        "description": "I'm an IT developer with more than 20 years of experience working on projects of different sizes and complexity. I have experience with Microsoft technologies (.NET/C#, SharePoint, Azure), business intelligence tools (Power BI, SQL Server, SSIS, SSRS), and collaborative environments. I have worked in multidisciplinary teams during the whole project lifecycle: gathering requirements, designing solutions, developing, deploying, and giving support. I enjoy working with data and helping companies make better decisions, and I'm committed to continuous learning and good development practices.",
-        "languages": "Languages: Spanish (Native) · English (Intermediate–Upper Intermediate, B1–B2, actively improving)"
+        "description": "Senior BI Developer with more than 20 years of experience with Microsoft technologies, mainly SQL Server and Power BI. I design data warehouses, build ETL processes with SSIS and Azure Data Factory, and create Power BI models and dashboards with DAX, RLS, and Dataflows. I also have experience in C#/.NET and SharePoint, and I worked as a technical lead.\n\nSince 2017 I have worked as an independent consultant, directly with business users. This work taught me to make reports that are simple and useful. I am open to working in a team or on projects, and I want to keep learning new technologies.",
+        "languages": "Languages: Spanish (Native) · English (B1–B2)"
     },
     "experience": {
         "projects": "Projects:",
@@ -29,7 +21,7 @@ export default {
     "personalProjectsDetail": "Here you can see some of them:",
     "contact": {
         "title": "Have a project in mind?",
-        "description": "I'm open to freelance work and new opportunities. LinkedIn is the best way to reach me — send a message and let's talk.",
+        "description": "I'm open to freelance work and new opportunities. LinkedIn is the best way to reach me, so send a message and let's talk.",
         "cta": "Message me on LinkedIn"
     },
     "footer": {
