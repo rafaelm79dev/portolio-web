@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
+import SiteToggle from "./SiteToggle";
 import { useTranslations } from "../hooks/useTranslations";
 
 /**
@@ -95,6 +96,9 @@ export default function Header() {
                         </Link>
                     ))}
                 </div>
+            </div>
+            <div className="container mx-auto flex justify-center pt-3">
+                <SiteToggle />
             </div>
         </header>
     );

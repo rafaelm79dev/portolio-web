@@ -43,13 +43,13 @@ export default function Home() {
             company: "QBIC - Uruguay",
             period: language === "en" ? "Mar. 2026 - Present" : "Mar. 2026 - Presente",
             description: language === "en" ? [
-                "Build Power BI reports for a client: operations, purchasing, and planning.",
+                "Build Power BI reports for a client, covering different areas of the business.",
                 "Integrate data from SQL Server and SharePoint into one star-schema data model.",
-                "Create DAX measures for production and purchasing KPIs for management.",
+                "Create DAX measures for different KPIs, with reports and analysis adapted to each need.",
             ] : [
-                "Desarrollo reportes de Power BI para un cliente: operaciones, compras y planificación.",
+                "Desarrollo reportes de Power BI para un cliente, cubriendo distintas áreas del negocio.",
                 "Integro datos de SQL Server y SharePoint en un modelo de datos en esquema estrella.",
-                "Creo medidas DAX para KPIs de producción y compras para la gerencia.",
+                "Creo medidas DAX para distintos KPIs, con reportes y análisis adaptados a cada necesidad.",
             ],
             projects: [],
             technologies: ["Power BI", "DAX", "SQL Server", "SharePoint"],
@@ -62,20 +62,37 @@ export default function Home() {
             description: language === "en" ? [
                 "Maintain and improve Power BI reports for purchasing, sales, and costs.",
                 "Maintain a MySQL data warehouse that is the data source for the Power BI reports, and develop integrations with the client's ERP/billing system for costs and stock.",
-                "Built Power Apps forms and Power Automate flows for vehicle tracking, and Power BI reports to analyze the results.",
-                "Developed and supported an on-premises SharePoint portal for document management and company news.",
+                "Build Power Apps forms and Power Automate flows for a client, for control and record-keeping, and use that data to build Power BI reports to analyze the results.",
+                "Develop and support an on-premises SharePoint portal for document management, news, and events.",
                 "Support a client with Project Server (PWA) and SharePoint customizations.",
             ] : [
                 "Mantengo y mejoro reportes de Power BI para compras, ventas y costos.",
                 "Mantengo un data warehouse en MySQL que es la fuente de datos de los reportes de Power BI, y desarrollo integraciones con el sistema ERP/facturación del cliente para costos y stock.",
-                "Desarrollé formularios en Power Apps y flujos en Power Automate para seguimiento de vehículos, y reportes de Power BI para analizar los resultados.",
-                "Desarrollé y di soporte a un portal de SharePoint on-premises para gestión documental y noticias de la empresa.",
-                "Doy soporte a un cliente con Project Server (PWA) y personalizaciones de SharePoint.",
+                "Desarrollo formularios en Power Apps y flujos en Power Automate para un cliente, para control y registro de información, y con esos datos construyo reportes de Power BI para analizar los resultados.",
+                "Desarrollo y doy soporte a un portal de SharePoint on-premises para gestión documental, noticias y eventos de la organización.",
+                "Doy soporte a un cliente con Project Server (PWA) y desarrollo de personalizaciones de SharePoint.",
             ],
             projects: [],
             technologies: ["Power BI", "MySQL", "SharePoint", "Power Apps", "Power Automate"],
             image: "/company_logo/fibase.avif",
             logoBackground: "bg-foreground",
+        },
+        {
+            title: language === "en" ? "Data & BI Consultant" : "Consultor de Datos & BI",
+            company: language === "en" ? "Other clients - Uruguay & International" : "Otros clientes - Uruguay e Internacional",
+            period: language === "en" ? "2017 - Present" : "2017 - Presente",
+            description: language === "en" ? [
+                "Support on-premises SharePoint environments.",
+                "Supported a SQL Server data warehouse in Azure, with ETL processes in SSIS and Azure Data Factory.",
+                "Developed Python scripts to read data from Oracle Fusion and load it into a local SQL Server database for Power BI reports (international client, work in English).",
+            ] : [
+                "Doy soporte a entornos SharePoint on-premises.",
+                "Di soporte a un data warehouse en SQL Server en Azure, con procesos ETL en SSIS y Azure Data Factory.",
+                "Desarrollé scripts en Python para leer datos de Oracle Fusion y cargarlos en una base SQL Server local para reportes de Power BI (cliente internacional, trabajo en inglés).",
+            ],
+            projects: [],
+            technologies: ["SQL Server", "SSIS", "Azure Data Factory", "Python", "Oracle Fusion"],
+            image: "/company_logo/freelancer.png",
         },
         {
             title: language === "en" ? "SharePoint & Power Platform Developer" : "Desarrollador SharePoint & Power Platform",
@@ -85,13 +102,13 @@ export default function Home() {
                 "Supported on-premises SharePoint environments.",
                 "Developed custom components for the company's SharePoint extranet.",
                 "Built a SharePoint Online knowledge base with managed metadata and SharePoint Search, so users can find documents easily.",
-                "Migrated and exported SharePoint on-premises content to files.",
+                "Migrated and exported SharePoint on-premises content to files and other systems, building custom migration scripts and tools.",
                 "Built internal apps with Power Apps and automated processes with Power Automate.",
             ] : [
                 "Di soporte a entornos SharePoint on-premises.",
                 "Desarrollé componentes personalizados para la extranet de SharePoint de la empresa.",
                 "Construí una base de conocimiento en SharePoint Online con metadatos administrados y SharePoint Search, para que los usuarios encuentren documentos fácilmente.",
-                "Migré y exporté contenido de SharePoint on-premises a archivos.",
+                "Migré y exporté contenido de SharePoint on-premises a archivos y otros sistemas, implementando scripts y herramientas de migración.",
                 "Desarrollé aplicaciones internas con Power Apps y automaticé procesos con Power Automate.",
             ],
             projects: [],
@@ -118,23 +135,6 @@ export default function Home() {
             projects: [],
             technologies: ["Azure SQL Database", "SSIS", "Azure Data Factory", "T-SQL", "C#"],
             image: "/company_logo/ethofy.png",
-        },
-        {
-            title: language === "en" ? "Data & BI Consultant" : "Consultor de Datos & BI",
-            company: language === "en" ? "Other clients - Uruguay & International" : "Otros clientes - Uruguay e Internacional",
-            period: language === "en" ? "2017 - Present" : "2017 - Presente",
-            description: language === "en" ? [
-                "Supported a SQL Server data warehouse in Azure, with ETL processes in SSIS and Azure Data Factory.",
-                "Developed Python scripts to read data from Oracle Fusion and load it into a local SQL Server database for Power BI reports (international client, work in English).",
-                "Supported on-premises SharePoint environments.",
-            ] : [
-                "Di soporte a un data warehouse en SQL Server en Azure, con procesos ETL en SSIS y Azure Data Factory.",
-                "Desarrollé scripts en Python para leer datos de Oracle Fusion y cargarlos en una base SQL Server local para reportes de Power BI (cliente internacional, trabajo en inglés).",
-                "Di soporte a entornos SharePoint on-premises.",
-            ],
-            projects: [],
-            technologies: ["SQL Server", "SSIS", "Azure Data Factory", "Python", "Oracle Fusion"],
-            image: "/company_logo/freelancer.png",
         },
         {
             title: language === "en" ? "Technical Specialist" : "Especialista Técnico",
@@ -189,7 +189,7 @@ export default function Home() {
             <main id="main-content">
             {/* Profile Section */}
             <section id="profile" className="px-4 md:px-6 scroll-mt-24">
-                <div className="container mx-auto py-8 md:py-12">
+                <div className="container mx-auto pt-8 md:pt-12 pb-3 md:pb-4">
                     <p className="text-sm md:text-base lg:text-lg whitespace-pre-wrap leading-relaxed">
                         {t("profile.description")}
                     </p>
@@ -201,7 +201,7 @@ export default function Home() {
 
             {/* Skills Section */}
             <section id="skills" className="px-4 md:px-6 scroll-mt-24">
-                <div className="container mx-auto py-8 md:py-12">
+                <div className="container mx-auto pt-3 md:pt-4 pb-8 md:pb-12">
                     <div className="text-center mb-6">
                         <h2 className="text-2xl md:text-4xl font-bold">
                             {t("technicalSkills")}

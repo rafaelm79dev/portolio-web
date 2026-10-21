@@ -2,6 +2,10 @@ export default {
     "header": {
         "jobTitle": "Senior BI Developer | Power BI, SQL Server, SSIS, Azure Data Factory | .NET, SharePoint"
     },
+    "nav": {
+        "cv": "CV",
+        "services": "Services"
+    },
     "technicalSkills": "Skills",
     "sections": {
         "experience": "Work Experience",
@@ -23,6 +27,54 @@ export default {
         "title": "Have a project in mind?",
         "description": "I'm open to freelance work and new opportunities. LinkedIn is the best way to reach me, so send a message and let's talk.",
         "cta": "Message me on LinkedIn"
+    },
+    "services": {
+        "eyebrow": "Available for projects",
+        "title": "Power BI & data consulting",
+        "description": "I help teams organize their data and build reliable reports, using Power BI, SQL Server, and SharePoint.",
+        "ctaSecondary": "See my CV",
+        "stats": [
+            { "value": "20+", "label": "years of experience" },
+            { "value": "4", "label": "current and recent clients" },
+            { "value": "2017", "label": "working as an independent consultant" }
+        ],
+        "gridTitle": "What I can help with",
+        "list": [
+            {
+                "title": "Power BI dashboards & modeling",
+                "description": "Star-schema data modeling, DAX measures, row-level security (RLS), and executive reports."
+            },
+            {
+                "title": "Data warehousing & ETL",
+                "description": "Data warehouse design and ETL processes with SQL Server, SSIS, and Azure Data Factory."
+            },
+            {
+                "title": "SharePoint & Power Platform",
+                "description": "SharePoint portals, Power Apps forms, and process automation with Power Automate."
+            },
+            {
+                "title": "Custom backend development",
+                "description": "C#/.NET APIs to connect systems and automate business processes."
+            }
+        ],
+        "process": {
+            "title": "How we work",
+            "steps": [
+                {
+                    "title": "First call",
+                    "description": "We talk about your data sources and what you need to report."
+                },
+                {
+                    "title": "Proposal & scope",
+                    "description": "I send you a plan with deliverables and an estimated timeline."
+                },
+                {
+                    "title": "Delivery & handoff",
+                    "description": "I build the solution and leave documentation so your team can maintain it."
+                }
+            ]
+        },
+        "clientsLabel": "Current and recent clients"
     },
     "footer": {
         "rights": "All rights reserved."
