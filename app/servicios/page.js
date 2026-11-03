@@ -11,8 +11,6 @@ export default function Servicios() {
     const serviceList = t("services.list") || [];
     const processSteps = t("services.process.steps") || [];
 
-    const clients = ["QBIC", "Fibase", "Arnaldo C. Castro"];
-
     return (
         <div className="flex flex-col max-w-screen-md mx-auto">
             <a
@@ -88,6 +86,24 @@ export default function Servicios() {
                                     <p className="text-sm text-foreground/70 leading-relaxed">
                                         {service.description}
                                     </p>
+                                    {service.links && (
+                                        <p className="text-sm mt-3">
+                                            <span className="text-foreground/60">{service.linksLabel}: </span>
+                                            {service.links.map((link, i) => (
+                                                <span key={link.url}>
+                                                    {i > 0 && <span className="text-foreground/30"> · </span>}
+                                                    <Link
+                                                        href={link.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="font-semibold underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground"
+                                                    >
+                                                        {link.name}
+                                                    </Link>
+                                                </span>
+                                            ))}
+                                        </p>
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -115,22 +131,6 @@ export default function Servicios() {
                                         {step.description}
                                     </p>
                                 </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* Clients Section */}
-                <section className="px-4 md:px-6">
-                    <div className="container mx-auto py-8 border-t border-gray-200">
-                        <p className="text-xs text-center text-foreground/50 uppercase tracking-wide mb-4">
-                            {t("services.clientsLabel")}
-                        </p>
-                        <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
-                            {clients.map((client) => (
-                                <span key={client} className="text-sm md:text-base font-semibold text-foreground/70">
-                                    {client}
-                                </span>
                             ))}
                         </div>
                     </div>

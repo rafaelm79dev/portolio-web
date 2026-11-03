@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ import Link from "next/link";
  * Displays a project image, optional domain/display name, and optional description.
  */
 export default function ProjectItem({ project }) {
-    const { image, domain, displayName, description, technologies } = project;
+    const { image, domain, displayName, description, technologies, onlineLabel } = project;
 
     // Extract just the domain name part from the full URL for display (if domain exists)
     const finalDisplayName = displayName || (domain ? domain.replace(/^https?:\/\//, "").split("/")[0] : null);
@@ -50,6 +51,29 @@ export default function ProjectItem({ project }) {
                 </p>
             )}
 
+            {/* Visible URL when the project has both a display name and a link */}
+            {domain && displayName && (
+                <div className="flex flex-wrap items-center justify-center gap-2 -mt-1 mb-2">
+                    <Link
+                        href={domain}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs md:text-sm text-gray-600 underline hover:text-foreground"
+                    >
+                        {domain.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                    </Link>
+                    {onlineLabel && (
+                        <span className="inline-flex items-center gap-1.5 rounded-full bg-green-100 text-green-800 px-2 py-0.5 text-[10px] md:text-xs font-semibold">
+                            <span className="relative flex h-2 w-2" aria-hidden="true">
+                                <span className="absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 motion-safe:animate-ping" />
+                                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+                            </span>
+                            {onlineLabel}
+                        </span>
+                    )}
+                </div>
+            )}
+
             {/* Description if available */}
             {description && (
                 <p className="text-xs md:text-sm text-gray-600 text-left px-2">
@@ -59,16 +83,32 @@ export default function ProjectItem({ project }) {
 
             {/* Technologies/Skills if available */}
             {technologies && technologies.length > 0 && (
-                <div className="flex flex-wrap gap-2 justify-center px-2 mt-2">
-                    {technologies.map((tech, index) => (
-                        <span
-                            key={index}
-                            className="bg-accent text-foreground rounded-full px-3 py-1 text-[10px] md:text-xs font-semibold shadow-sm"
-                        >
-                            {tech}
-                        </span>
-                    ))}
-                </div>
+                technologies.some((tech) => typeof tech === "object") ? (
+                    // Technologies with a short note on what each one was used for
+                    <dl className="grid grid-cols-[auto_1fr] items-center gap-x-3 gap-y-2 text-left w-full px-2 mt-3 pt-3 border-t border-gray-200">
+                        {technologies.map((tech, index) => (
+                            <Fragment key={index}>
+                                <dt className="justify-self-start bg-accent text-foreground rounded-full px-3 py-1 text-[10px] md:text-xs font-semibold shadow-sm whitespace-nowrap">
+                                    {tech.name}
+                                </dt>
+                                <dd className="text-xs md:text-sm text-gray-600 leading-snug">
+                                    {tech.description}
+                                </dd>
+                            </Fragment>
+                        ))}
+                    </dl>
+                ) : (
+                    <div className="flex flex-wrap gap-2 justify-center px-2 mt-2">
+                        {technologies.map((tech, index) => (
+                            <span
+                                key={index}
+                                className="bg-accent text-foreground rounded-full px-3 py-1 text-[10px] md:text-xs font-semibold shadow-sm"
+                            >
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                )
             )}
         </div>
     );

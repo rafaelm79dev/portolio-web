@@ -162,6 +162,25 @@ export default function Home() {
     // Sample project data
     const projects = [
         {
+            image: "/projects_logo/apitool-light.png",
+            domain: "https://apitool.techspot365.com/",
+            displayName: "APITool",
+            onlineLabel: language === "en" ? "Online" : "En línea",
+            description: language === "en" ? "Data platform to access data through APIs. It brings together processed, organized data ready to query from systems, scripts, spreadsheets or reports, and grows with new sources over time. Built with the help of Claude AI." :
+                "Plataforma de datos para acceder mediante API. Reúne datos procesados y ordenados, listos para consultar desde sistemas, scripts, planillas o reportes, y se amplía con nuevas fuentes a medida que pasa el tiempo. Desarrollada con la asistencia de Claude AI.",
+            technologies: [
+                { name: "Next.js", description: language === "en" ? "Frontend and API routes (App Router, Cache Components)" : "Frontend y rutas de la API (App Router, Cache Components)" },
+                { name: "TypeScript", description: language === "en" ? "Typed code across the project" : "Código tipado en todo el proyecto" },
+                { name: "Tailwind", description: language === "en" ? "Interface styling" : "Estilos de la interfaz" },
+                { name: "Supabase", description: language === "en" ? "PostgreSQL database with row-level security and authentication" : "Base de datos PostgreSQL con seguridad por filas (RLS) y autenticación" },
+                { name: "Vercel", description: language === "en" ? "Hosting, deployment and analytics" : "Hosting, despliegue y analítica" },
+                { name: "GitHub Actions", description: language === "en" ? "Automation of tasks and deployment pipelines" : "Automatización de tareas y flujos de despliegue" },
+                { name: "Python", description: language === "en" ? "Testing" : "Pruebas" },
+                { name: "REST API", description: language === "en" ? "Data access from systems, scripts and spreadsheets" : "Acceso a los datos desde sistemas, scripts y planillas" },
+                { name: "Claude AI", description: language === "en" ? "Development assistance" : "Asistencia en el desarrollo" },
+            ]
+        },
+        {
             image: "/projects_logo/mispedidos.png",
             displayName: "Mis Pedidos",
             description: language === "en" ? "Internal web app (personal project) to manage a monthly employee purchase benefit, with a spending limit, approval control, and full traceability. Built with Blazor Server (.NET 10), using Microsoft Graph API and SharePoint Lists as the backend, with custom authentication, a full admin panel, and an audit system. Built with the help of Claude AI." :
