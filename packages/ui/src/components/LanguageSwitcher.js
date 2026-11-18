@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useLanguage } from "../contexts/LanguageContext";
+import { useLanguage } from "../i18n/TranslationsProvider.js";
 
 export default function LanguageSwitcher() {
     const { language, changeLanguage } = useLanguage();

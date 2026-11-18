@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "../hooks/useTranslations";
+import { useTranslations } from "../i18n/TranslationsProvider.js";
 /**
  * ExperienceItem component
  * Displays a single work experience block with image, title, description and technologies

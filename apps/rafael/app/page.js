@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import Header from "./components/Header";
-import ExperienceItem from "./components/ExperienceItem";
-import ProjectItem from "./components/ProjectItem";
-import { useTranslations } from "./hooks/useTranslations";
+import { ExperienceItem, ProjectItem, useTranslations } from "@portfolio/ui";
 
 export default function Home() {
     const { t, language } = useTranslations();

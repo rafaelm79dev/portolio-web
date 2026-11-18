@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { useLanguage } from "../contexts/LanguageContext";
+import { useLanguage } from "@portfolio/ui";
 
 export default function MetadataUpdater() {
     const { language } = useLanguage();

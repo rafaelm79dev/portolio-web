@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import LanguageSwitcher from "./LanguageSwitcher";
 import SiteToggle from "./SiteToggle";
-import { useTranslations } from "../hooks/useTranslations";
+import { LanguageSwitcher, useTranslations } from "@portfolio/ui";
 
 /**
  * Header component for the portfolio website

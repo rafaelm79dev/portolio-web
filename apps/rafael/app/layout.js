@@ -1,6 +1,8 @@
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import LanguageProviderWrapper from "./providers/LanguageProviderWrapper";
+import { TranslationsProvider } from "@portfolio/ui";
+import es from "./translations/es.js";
+import en from "./translations/en.js";
 import MetadataUpdater from "./components/MetadataUpdater";
 
 const inter = Inter({
@@ -26,10 +28,10 @@ export default function RootLayout({ children }) {
             <body
                 className={`${inter.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
             >
-                <LanguageProviderWrapper>
+                <TranslationsProvider translations={{ es, en }}>
                     <MetadataUpdater />
                     {children}
-                </LanguageProviderWrapper>
+                </TranslationsProvider>
             </body>
         </html>
     );

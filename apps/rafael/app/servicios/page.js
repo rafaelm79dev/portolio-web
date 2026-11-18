@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Header from "../components/Header";
-import { useTranslations } from "../hooks/useTranslations";
+import { useTranslations } from "@portfolio/ui";
 
 export default function Servicios() {
     const { t } = useTranslations();
