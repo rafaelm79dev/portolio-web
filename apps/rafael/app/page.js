@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Header from "./components/Header";
+import SiteHeader from "./components/SiteHeader";
 import { ExperienceItem, ProjectItem, useTranslations } from "@portfolio/ui";
 
 export default function Home() {
@@ -202,7 +202,7 @@ export default function Home() {
             >
                 {language === "en" ? "Skip to main content" : "Saltar al contenido principal"}
             </a>
-            <Header />
+            <SiteHeader />
             <main id="main-content">
             {/* Profile Section */}
             <section id="profile" className="px-4 md:px-6 scroll-mt-24">

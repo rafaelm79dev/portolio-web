@@ -3,7 +3,7 @@ import "./globals.css";
 import { TranslationsProvider } from "@portfolio/ui";
 import es from "./translations/es.js";
 import en from "./translations/en.js";
-import MetadataUpdater from "./components/MetadataUpdater";
+import SiteMetadata from "./components/SiteMetadata";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
                 className={`${inter.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
             >
                 <TranslationsProvider translations={{ es, en }}>
-                    <MetadataUpdater />
+                    <SiteMetadata />
                     {children}
                 </TranslationsProvider>
             </body>

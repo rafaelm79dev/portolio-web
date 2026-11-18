@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Header from "../components/Header";
+import SiteHeader from "../components/SiteHeader";
 import { useTranslations } from "@portfolio/ui";
 
 export default function Servicios() {
@@ -19,7 +19,7 @@ export default function Servicios() {
             >
                 Saltar al contenido principal
             </a>
-            <Header />
+            <SiteHeader />
             <main id="main-content">
                 {/* Hero Section */}
                 <section className="px-4 md:px-6 scroll-mt-24">

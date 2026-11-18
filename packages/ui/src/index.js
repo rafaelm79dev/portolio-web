@@ -4,3 +4,6 @@ export { resolveMetadata } from "./metadata/resolveMetadata.js";
 export { default as LanguageSwitcher } from "./components/LanguageSwitcher.js";
 export { default as ExperienceItem } from "./components/ExperienceItem.js";
 export { default as ProjectItem } from "./components/ProjectItem.js";
+export { default as Header } from "./components/Header.js";
+export { default as SiteToggle } from "./components/SiteToggle.js";
+export { default as MetadataUpdater } from "./metadata/MetadataUpdater.js";
