@@ -7,7 +7,7 @@
  * formas planas, etiquetas en monoespaciada y modo claro/oscuro según el sistema.
  */
 @theme {
-    --color-background: #ffffff;
+    --color-background: #fafafa;
     --color-foreground: #18181b;
     --color-accent: #6e2682; /* violeta de marca (brand-purple de APITool) */
     --color-brand-blue: #1688ce; /* azul secundario, usado en el degradado */
@@ -29,7 +29,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-background: #0a0a0a;
+        --color-background: #000000;
         --color-foreground: #fafafa;
         --color-accent-text: #d9b8ee; /* violeta suave: se lee sobre fondo oscuro */
         --color-muted-foreground: #9f9fa9;
@@ -57,10 +57,9 @@ h2.font-bold {
     letter-spacing: -0.025em;
 }
 
-/* Header: línea inferior fina en lugar de degradado */
+/* Header: línea inferior fina (el degradado va en la franja superior de la página) */
 header.sticky {
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(to right, var(--color-brand-blue), var(--color-accent)) 1;
+    border-bottom: 1px solid var(--color-border);
 }
 
 /* Textos resaltados en violeta: puesto del header y de cada trabajo */

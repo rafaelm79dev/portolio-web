@@ -47,6 +47,7 @@ export default function RootLayout({ children }) {
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: jsonLdString(personJsonLd) }}
                 />
+                <div aria-hidden="true" className="h-1 bg-linear-to-r from-brand-blue to-accent" />
                 <TranslationsProvider translations={{ es, en }} storageKey="lucia-language">
                     <SiteMetadata />
                     {children}
