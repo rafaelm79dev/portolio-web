@@ -1,6 +1,6 @@
 import { Inter, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import { TranslationsProvider } from "@portfolio/ui";
+import { BrandBar, TranslationsProvider } from "@portfolio/ui";
 import es from "../translations/es.js";
 import en from "../translations/en.js";
 import { buildPersonJsonLd, jsonLdString } from "../site-config.js";
@@ -29,7 +29,7 @@ export default function LocaleRoot({ lang, children }) {
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: jsonLdString(buildPersonJsonLd(lang)) }}
                 />
-                <div aria-hidden="true" className="h-1 bg-linear-to-r from-brand-blue to-accent" />
+                <BrandBar />
                 <TranslationsProvider translations={{ [lang]: dictionaries[lang] }} language={lang}>
                     {children}
                 </TranslationsProvider>
