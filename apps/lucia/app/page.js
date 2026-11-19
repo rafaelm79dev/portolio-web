@@ -24,7 +24,7 @@ export default function Home() {
             <main id="main-content">
                 {/* Profile Section */}
                 <section id="profile" className="px-4 md:px-6 scroll-mt-24">
-                    <div className="container mx-auto pt-8 md:pt-12 pb-3 md:pb-4">
+                    <div className="container mx-auto pt-4 md:pt-6 pb-3 md:pb-4">
                         <p className="text-sm md:text-base lg:text-lg whitespace-pre-wrap leading-relaxed">
                             {t("profile.description")}
                         </p>
