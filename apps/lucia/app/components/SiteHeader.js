@@ -1,6 +1,7 @@
 "use client";
 
 import { Header, useTranslations } from "@portfolio/ui";
+import { PATHS } from "../site-config.js";
 
 const photo = { src: "/profile.png", alt: "Lucía Salvarrey" };
 
@@ -26,6 +27,7 @@ export default function SiteHeader() {
             photo={photo}
             badges={badges}
             socialLinks={socialLinks}
+            languageHrefs={PATHS}
         />
     );
 }

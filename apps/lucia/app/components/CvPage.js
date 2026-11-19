@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import SiteHeader from "./components/SiteHeader";
+import SiteHeader from "./SiteHeader";
 import { ExperienceItem, useTranslations } from "@portfolio/ui";
 
-export default function Home() {
+export default function CvPage() {
     const { t } = useTranslations();
 
     const certifications = t("certifications");
