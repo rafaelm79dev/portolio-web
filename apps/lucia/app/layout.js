@@ -29,11 +29,13 @@ export const metadata = {
         locale: "es_UY",
         title: fallback.title.es,
         description: fallback.description.es,
+        images: [{ url: "/profile.png", alt: "Lucía Salvarrey" }],
     },
     twitter: {
         card: "summary",
         title: fallback.title.es,
         description: fallback.description.es,
+        images: ["/profile.png"],
     },
 };
 

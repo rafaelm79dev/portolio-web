@@ -3,18 +3,21 @@
 
 export const SITE_URL = "https://lucia.techspot365.com";
 
-export const SAME_AS = ["https://www.linkedin.com/in/luciasalvarrey"];
+export const SAME_AS = [
+    "https://www.linkedin.com/in/luciasalvarrey",
+    "https://www.salesforce.com/trailblazer/lsalvarrey",
+];
 
 export const routes = [];
 
 export const fallback = {
     title: {
-        en: "Lucía Salvarrey | Salesforce Technical Architect",
-        es: "Lucía Salvarrey | Arquitecta Técnica Salesforce",
+        en: "Lucía Salvarrey | Salesforce Technical Architect & Senior Developer",
+        es: "Lucía Salvarrey | Salesforce Technical Architect & Senior Developer",
     },
     description: {
-        en: "Professional portfolio of Lucía Salvarrey, Salesforce Technical Architect, Developer, Consultant and DevOps.",
-        es: "Portfolio profesional de Lucía Salvarrey, Arquitecta Técnica, Desarrolladora, Consultora y DevOps en Salesforce.",
+        en: "Salesforce Technical Architect & Senior Developer since 2014: Lightning Web Components, Apex, Flows and integrations. Certified Application Architect.",
+        es: "Salesforce Technical Architect & Senior Developer desde 2014: Lightning Web Components, Apex, Flows e integraciones. Certificada como Application Architect.",
     },
 };
 
@@ -24,7 +27,12 @@ export const personJsonLd = {
     "@id": `${SITE_URL}/#person`,
     name: "Lucía Salvarrey",
     url: SITE_URL,
-    jobTitle: "Salesforce Technical Architect",
+    image: `${SITE_URL}/profile.png`,
+    jobTitle: "Salesforce Technical Architect & Senior Developer",
+    worksFor: {
+        "@type": "Organization",
+        name: "Collaborative Technology Solutions International",
+    },
     description: fallback.description.es,
     knowsAbout: [
         "Salesforce",
@@ -32,6 +40,7 @@ export const personJsonLd = {
         "Apex",
         "Salesforce Flow",
         "Visualforce",
+        "Agentforce",
         "DevOps",
     ],
     sameAs: SAME_AS,
