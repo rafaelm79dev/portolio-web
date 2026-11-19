@@ -2,7 +2,7 @@
 
 import { Header, useTranslations } from "@portfolio/ui";
 
-const photo = { src: "/profile.svg", alt: "Lucía Salvarrey" };
+const photo = { src: "/profile.png", alt: "Lucía Salvarrey" };
 
 const badges = [{ src: "/uruguay-flag.svg", alt: "Uruguay flag", rounded: true }];
 
