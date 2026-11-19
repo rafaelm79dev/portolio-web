@@ -4,6 +4,7 @@ import { TranslationsProvider } from "@portfolio/ui";
 import es from "./translations/es.js";
 import en from "./translations/en.js";
 import SiteMetadata from "./components/SiteMetadata";
+import { SITE_URL, fallback, personJsonLd, jsonLdString } from "./site-config.js";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -17,9 +18,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-    title: "Lucía Salvarrey | Salesforce Technical Architect",
-    description:
-        "Professional portfolio of Lucía Salvarrey, Salesforce Technical Architect, Developer, Consultant and DevOps.",
+    metadataBase: new URL(SITE_URL),
+    title: fallback.title.es,
+    description: fallback.description.es,
+    alternates: { canonical: "/" },
+    openGraph: {
+        type: "website",
+        url: SITE_URL,
+        siteName: "Lucía Salvarrey",
+        locale: "es_UY",
+        title: fallback.title.es,
+        description: fallback.description.es,
+    },
+    twitter: {
+        card: "summary",
+        title: fallback.title.es,
+        description: fallback.description.es,
+    },
 };
 
 export default function RootLayout({ children }) {
@@ -28,6 +43,10 @@ export default function RootLayout({ children }) {
             <body
                 className={`${inter.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
             >
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: jsonLdString(personJsonLd) }}
+                />
                 <TranslationsProvider translations={{ es, en }} storageKey="lucia-language">
                     <SiteMetadata />
                     {children}

@@ -51,6 +51,7 @@ export default {
             {
                 "title": "Director of Technology",
                 "company": "Collaborative Technology Solutions International",
+                "image": "/company_logo/ctsi.svg",
                 "period": "Feb. 2024 - Present",
                 "description": [
                     "Salesforce Technical Architect / Developer / Consultant / DevOps at the company since January 2022.",
@@ -86,6 +87,7 @@ export default {
             {
                 "title": "Salesforce Technical Architect",
                 "company": "CloudGaia - Uruguay",
+                "image": "/company_logo/cloudgaia.png",
                 "period": "May. 2021 - Jan. 2022",
                 "description": [],
                 "projects": [],
@@ -105,6 +107,7 @@ export default {
             {
                 "title": "Salesforce Developer",
                 "company": "Altimetrik Uruguay",
+                "image": "/company_logo/altimetrik.webp",
                 "period": "Jul. 2015 - Apr. 2017",
                 "description": ["Salesforce solutions development."],
                 "projects": [],

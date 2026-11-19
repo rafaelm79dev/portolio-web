@@ -1,21 +1,9 @@
 "use client";
 
 import { MetadataUpdater } from "@portfolio/ui";
+import { routes, fallback } from "../site-config.js";
 
-const routes = [];
-
-const fallback = {
-    title: {
-        en: "Lucía Salvarrey | Salesforce Technical Architect",
-        es: "Lucía Salvarrey | Arquitecta Técnica Salesforce",
-    },
-    description: {
-        en: "Professional portfolio of Lucía Salvarrey, Salesforce Technical Architect, Developer, Consultant and DevOps.",
-        es: "Portfolio profesional de Lucía Salvarrey, Arquitecta Técnica, Desarrolladora, Consultora y DevOps en Salesforce.",
-    },
-};
-
-/** Lucía's titles and descriptions per language. */
+/** Lucía's titles and descriptions per language (client-side, follows the language switcher). */
 export default function SiteMetadata() {
     return <MetadataUpdater routes={routes} fallback={fallback} />;
 }
