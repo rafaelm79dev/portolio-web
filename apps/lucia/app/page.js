@@ -46,7 +46,7 @@ export default function Home() {
                             {certifications.map((certification) => (
                                 <li
                                     key={certification}
-                                    className="bg-foreground text-accent rounded-full px-3 md:px-5 py-1.5 md:py-2 text-xs md:text-sm font-semibold shadow-md"
+                                    className="border border-accent/40 bg-accent/10 text-foreground rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
                                 >
                                     {certification}
                                 </li>
@@ -73,7 +73,7 @@ export default function Home() {
                                         {category.items.map((skill) => (
                                             <span
                                                 key={skill}
-                                                className="bg-accent text-foreground rounded-full px-3 md:px-5 py-1.5 md:py-2 text-xs md:text-sm font-semibold shadow-md hover:shadow-lg transition-shadow"
+                                                className="border border-border bg-muted text-foreground rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
                                             >
                                                 {skill}
                                             </span>
@@ -127,18 +127,18 @@ export default function Home() {
                 {/* Contact Section */}
                 <section id="contact" className="px-4 md:px-6 scroll-mt-24">
                     <div className="container mx-auto py-12 md:py-16">
-                        <div className="rounded-2xl bg-foreground text-background text-center px-6 py-10 md:px-12 md:py-14 shadow-xl">
+                        <div className="rounded-xl border border-border bg-muted text-center px-6 py-10 md:px-12 md:py-14">
                             <h2 className="text-2xl md:text-4xl font-bold mb-3 text-balance">
                                 {t("contact.title")}
                             </h2>
-                            <p className="text-sm md:text-lg text-background/80 max-w-xl mx-auto mb-8">
+                            <p className="text-sm md:text-lg text-muted-foreground max-w-xl mx-auto mb-8">
                                 {t("contact.description")}
                             </p>
                             <Link
                                 href="https://www.linkedin.com/in/luciasalvarrey"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-accent text-foreground rounded-full px-6 md:px-8 py-3 text-sm md:text-base font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition"
+                                className="inline-flex items-center gap-2 bg-accent text-foreground rounded-md px-6 md:px-8 py-3 text-sm md:text-base font-medium hover:opacity-90 transition"
                             >
                                 {t("contact.cta")}
                             </Link>

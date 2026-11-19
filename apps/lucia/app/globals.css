@@ -1,23 +1,70 @@
 @import "tailwindcss";
 @source "../../../packages/ui/src";
 
+/*
+ * Prueba: look & feel inspirado en https://apitool.techspot365.com
+ * Paleta neutra tipo Zinc, azul de marca, bordes finos, formas planas,
+ * etiquetas en monoespaciada y modo claro/oscuro según el sistema.
+ */
 @theme {
-    /* Color palette (provisional, to be defined with Lucía) */
-    --color-background: #eef1f3;
-    --color-foreground: #1f2d3a;
-    --color-accent: #7cc4d4;
-    --color-muted-foreground: #5b6b78;
-    --color-muted: #d5dde2;
+    --color-background: #ffffff;
+    --color-foreground: #18181b;
+    --color-accent: #1688ce;
+    --color-muted-foreground: #71717b;
+    --color-muted: #f4f4f5;
+    --color-border: #e4e4e7;
 
-    /* Header gradient */
-    --color-header-from: #f8fafb;
-    --color-header-via: #e6ecef;
-    --color-header-to: #c9d6dd;
+    /* Header gradient (plano) */
+    --color-header-from: #ffffff;
+    --color-header-via: #ffffff;
+    --color-header-to: #fafafa;
 
-    /* Experience card gradient */
+    /* Experience card gradient (plano) */
     --color-card-from: #ffffff;
-    --color-card-via: #f4f7f9;
-    --color-card-to: #e3eaee;
+    --color-card-via: #ffffff;
+    --color-card-to: #fafafa;
+}
+
+/* Siempre claro: se quitó el modo oscuro automático (seguía el tema del sistema). */
+
+body {
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Títulos: más sobrios y compactos */
+h1.font-bold,
+h2.font-bold {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+/* Header: línea inferior fina en lugar de degradado */
+header.sticky {
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Tarjetas de experiencia: planas, borde fino, sin sombra ni movimiento */
+#experience .shadow-2xl {
+    box-shadow: none;
+    border-radius: 0.75rem;
+    border-color: var(--color-border);
+}
+#experience .shadow-2xl:hover {
+    box-shadow: none;
+    translate: none;
+}
+#experience .border-gray-200 {
+    border-color: var(--color-border);
+}
+
+/* Etiquetas de tecnologías: chips planos en monoespaciada */
+#experience span.rounded-full {
+    background: var(--color-muted);
+    color: var(--color-foreground);
+    border: 1px solid var(--color-border);
+    border-radius: 0.375rem;
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-weight: 500;
 }
 
 @media (prefers-reduced-motion: reduce) {
