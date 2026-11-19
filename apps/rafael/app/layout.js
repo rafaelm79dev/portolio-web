@@ -1,6 +1,6 @@
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { TranslationsProvider } from "@portfolio/ui";
+import { BrandBar, TranslationsProvider } from "@portfolio/ui";
 import es from "./translations/es.js";
 import en from "./translations/en.js";
 import SiteMetadata from "./components/SiteMetadata";
@@ -49,6 +49,7 @@ export default function RootLayout({ children }) {
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: jsonLdString(personJsonLd) }}
                 />
+                <BrandBar />
                 <TranslationsProvider translations={{ es, en }}>
                     <SiteMetadata />
                     {children}

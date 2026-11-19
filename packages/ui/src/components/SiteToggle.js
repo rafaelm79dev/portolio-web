@@ -17,14 +17,14 @@ export default function SiteToggle({ items }) {
     const activeHref = nested ? nested.href : "/";
 
     return (
-        <div className="flex items-center gap-1 bg-gray-200 p-1 rounded-full">
+        <div className="flex items-center gap-1 bg-muted border border-border p-1 rounded-full">
             {items.map((item) => (
                 <Link
                     key={item.href}
                     href={item.href}
                     className={`px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold transition ${item.href === activeHref
-                        ? "bg-accent text-foreground"
-                        : "text-gray-600 hover:text-foreground"
+                        ? "bg-accent text-white"
+                        : "text-muted-foreground hover:text-foreground"
                         }`}
                 >
                     {item.label}

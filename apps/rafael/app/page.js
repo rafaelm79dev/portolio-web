@@ -73,7 +73,7 @@ export default function Home() {
             projects: [],
             technologies: ["Power BI", "MySQL", "SharePoint", "Power Apps", "Power Automate"],
             image: "/company_logo/fibase.avif",
-            logoBackground: "bg-foreground",
+            logoBackground: "bg-zinc-900",
         },
         {
             title: language === "en" ? "Data & BI Consultant" : "Consultor de Datos & BI",
@@ -198,7 +198,7 @@ export default function Home() {
         <div className="flex flex-col max-w-screen-md mx-auto">
             <a
                 href="#main-content"
-                className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-foreground focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold"
+                className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold"
             >
                 {language === "en" ? "Skip to main content" : "Saltar al contenido principal"}
             </a>
@@ -227,14 +227,14 @@ export default function Home() {
                     <div className="space-y-5 md:space-y-6">
                         {skillCategories.map((category, catIndex) => (
                             <div key={catIndex}>
-                                <h3 className="text-sm md:text-base font-semibold text-foreground mb-2 md:mb-3">
+                                <h3 className="text-sm md:text-base font-semibold text-accent-text mb-2 md:mb-3">
                                     {category.title}
                                 </h3>
                                 <div className="flex flex-wrap gap-2 md:gap-3">
                                     {category.skills.map((skill, index) => (
                                         <span
                                             key={index}
-                                            className="bg-accent text-foreground rounded-full px-3 md:px-5 py-1.5 md:py-2 text-xs md:text-sm font-semibold shadow-md hover:shadow-lg transition-shadow"
+                                            className="border border-brand-blue/30 bg-brand-blue/10 text-foreground rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
                                         >
                                             {skill}
                                         </span>
@@ -302,18 +302,18 @@ export default function Home() {
             {/* Contact Section */}
             <section id="contact" className="px-4 md:px-6 scroll-mt-24">
                 <div className="container mx-auto py-12 md:py-16">
-                    <div className="rounded-2xl bg-foreground text-background text-center px-6 py-10 md:px-12 md:py-14 shadow-xl">
+                    <div className="rounded-xl border border-border bg-muted text-center px-6 py-10 md:px-12 md:py-14">
                         <h2 className="text-2xl md:text-4xl font-bold mb-3 text-balance">
                             {t("contact.title")}
                         </h2>
-                        <p className="text-sm md:text-lg text-background/80 max-w-xl mx-auto mb-8">
+                        <p className="text-sm md:text-lg text-muted-foreground max-w-xl mx-auto mb-8">
                             {t("contact.description")}
                         </p>
                         <Link
                             href="https://www.linkedin.com/in/rafaelm79"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 bg-accent text-foreground rounded-full px-6 md:px-8 py-3 text-sm md:text-base font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition"
+                            className="inline-flex items-center gap-2 bg-accent text-white rounded-md px-6 md:px-8 py-3 text-sm md:text-base font-medium hover:opacity-90 transition"
                         >
                             {t("contact.cta")}
                         </Link>

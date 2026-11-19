@@ -15,7 +15,7 @@ export default function Servicios() {
         <div className="flex flex-col max-w-screen-md mx-auto">
             <a
                 href="#main-content"
-                className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-foreground focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold"
+                className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold"
             >
                 Saltar al contenido principal
             </a>
@@ -24,7 +24,7 @@ export default function Servicios() {
                 {/* Hero Section */}
                 <section className="px-4 md:px-6 scroll-mt-24">
                     <div className="container mx-auto py-10 md:py-14 text-center">
-                        <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-accent mb-3">
+                        <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-accent-text mb-3">
                             {t("services.eyebrow")}
                         </p>
                         <h1 className="text-3xl md:text-5xl font-bold text-balance mb-4">
@@ -38,13 +38,13 @@ export default function Servicios() {
                                 href="https://www.linkedin.com/in/rafaelm79"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-accent text-foreground rounded-full px-6 py-3 text-sm md:text-base font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition"
+                                className="inline-flex items-center gap-2 bg-accent text-white rounded-md px-6 py-3 text-sm md:text-base font-medium hover:opacity-90 transition"
                             >
                                 {t("contact.cta")}
                             </Link>
                             <Link
                                 href="/"
-                                className="inline-flex items-center gap-2 border border-gray-300 text-foreground rounded-full px-6 py-3 text-sm md:text-base font-semibold hover:border-foreground transition"
+                                className="inline-flex items-center gap-2 border border-border text-foreground rounded-md px-6 py-3 text-sm md:text-base font-medium hover:border-accent transition"
                             >
                                 {t("services.ctaSecondary")}
                             </Link>
@@ -54,7 +54,7 @@ export default function Servicios() {
 
                 {/* Stats Section */}
                 <section className="px-4 md:px-6">
-                    <div className="container mx-auto py-6 md:py-8 border-y border-gray-200">
+                    <div className="container mx-auto py-6 md:py-8 border-y border-border">
                         <div className="flex flex-wrap justify-center gap-8 md:gap-16">
                             {stats.map((stat, index) => (
                                 <div key={index} className="text-center">
@@ -78,7 +78,7 @@ export default function Servicios() {
                             {serviceList.map((service, index) => (
                                 <div
                                     key={index}
-                                    className="p-5 md:p-6 rounded-xl bg-white border border-gray-200 shadow-sm"
+                                    className="p-5 md:p-6 rounded-xl bg-card border border-border"
                                 >
                                     <h3 className="text-base md:text-lg font-bold mb-2">
                                         {service.title}
@@ -96,7 +96,7 @@ export default function Servicios() {
                                                         href={link.url}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="font-semibold underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground"
+                                                        className="font-semibold text-accent-text underline decoration-accent-text/40 underline-offset-4 hover:decoration-accent-text"
                                                     >
                                                         {link.name}
                                                     </Link>
@@ -121,7 +121,7 @@ export default function Servicios() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                             {processSteps.map((step, index) => (
                                 <div key={index}>
-                                    <div className="w-8 h-8 rounded-full bg-accent text-foreground flex items-center justify-center text-sm font-bold mb-3 tabular-nums">
+                                    <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center text-sm font-bold mb-3 tabular-nums">
                                         {index + 1}
                                     </div>
                                     <h3 className="text-sm md:text-base font-bold mb-1">
@@ -139,18 +139,18 @@ export default function Servicios() {
                 {/* Contact Section */}
                 <section className="px-4 md:px-6 scroll-mt-24">
                     <div className="container mx-auto py-12 md:py-16">
-                        <div className="rounded-2xl bg-foreground text-background text-center px-6 py-10 md:px-12 md:py-14 shadow-xl">
+                        <div className="rounded-xl border border-border bg-muted text-center px-6 py-10 md:px-12 md:py-14">
                             <h2 className="text-2xl md:text-4xl font-bold mb-3 text-balance">
                                 {t("contact.title")}
                             </h2>
-                            <p className="text-sm md:text-lg text-background/80 max-w-xl mx-auto mb-8">
+                            <p className="text-sm md:text-lg text-muted-foreground max-w-xl mx-auto mb-8">
                                 {t("contact.description")}
                             </p>
                             <Link
                                 href="https://www.linkedin.com/in/rafaelm79"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-accent text-foreground rounded-full px-6 md:px-8 py-3 text-sm md:text-base font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition"
+                                className="inline-flex items-center gap-2 bg-accent text-white rounded-md px-6 md:px-8 py-3 text-sm md:text-base font-medium hover:opacity-90 transition"
                             >
                                 {t("contact.cta")}
                             </Link>

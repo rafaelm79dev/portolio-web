@@ -1,0 +1,136 @@
+/*
+ * Tema compartido de los sitios (look & feel inspirado en https://apitool.techspot365.com).
+ * Paleta neutra tipo Zinc, violeta de marca con azul secundario, bordes finos,
+ * formas planas, etiquetas en monoespaciada y modo claro/oscuro según el sistema.
+ *
+ * Cada app lo importa desde su globals.css:
+ *   @import "tailwindcss";
+ *   @import "../../../packages/ui/src/theme.css";
+ *   @source "../../../packages/ui/src";
+ */
+@theme {
+    --color-background: #fafafa;
+    --color-foreground: #18181b;
+    --color-accent: #6e2682; /* violeta de marca (brand-purple de APITool) */
+    --color-brand-blue: #1688ce; /* azul secundario, usado en el degradado */
+    --color-accent-text: #6e2682; /* violeta para resaltar textos */
+    --color-muted-foreground: #71717b;
+    --color-muted: #f4f4f5;
+    --color-border: #e4e4e7;
+    --color-card: #ffffff; /* fondo de tarjetas y bloques */
+
+    /* Header gradient (plano) */
+    --color-header-from: #ffffff;
+    --color-header-via: #ffffff;
+    --color-header-to: #fafafa;
+
+    /* Experience card gradient (plano) */
+    --color-card-from: #ffffff;
+    --color-card-via: #ffffff;
+    --color-card-to: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #000000;
+        --color-foreground: #fafafa;
+        --color-accent-text: #d9b8ee; /* violeta suave: se lee sobre fondo oscuro */
+        --color-muted-foreground: #9f9fa9;
+        --color-muted: #18181b;
+        --color-border: #27272a;
+        --color-card: #0f0f11;
+
+        --color-header-from: #2a2a2e;
+        --color-header-via: #262629;
+        --color-header-to: #212124;
+
+        --color-card-from: #111113;
+        --color-card-via: #111113;
+        --color-card-to: #0f0f11;
+    }
+}
+
+body {
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Títulos: más sobrios y compactos */
+h1.font-bold,
+h2.font-bold {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+/* Header: tinte violeta suave con línea violeta debajo (el degradado va en la franja superior de la página) */
+header.sticky {
+    background-image: none;
+    background-color: color-mix(in srgb, var(--color-accent) 10%, var(--color-background));
+    border-bottom: 2px solid var(--color-accent);
+}
+header.sticky .border-white {
+    border: 2px solid var(--color-accent);
+}
+@media (prefers-color-scheme: dark) {
+    header.sticky {
+        background-color: color-mix(in srgb, var(--color-accent) 25%, var(--color-background));
+    }
+    /* Íconos negros (GitHub): se invierten para verse sobre el header oscuro */
+    header.sticky img[src$="github.svg"] {
+        filter: invert(1);
+    }
+}
+
+/* Textos resaltados en violeta: puesto del header y de cada trabajo */
+header.sticky p,
+#experience h3 {
+    color: var(--color-accent-text);
+}
+
+/* Tarjetas de experiencia: planas, borde fino, sin sombra ni movimiento */
+#experience .shadow-2xl {
+    box-shadow: none;
+    border-radius: 0.75rem;
+    border-color: var(--color-border);
+}
+#experience .shadow-2xl:hover {
+    box-shadow: none;
+    translate: none;
+    border-color: color-mix(in srgb, var(--color-accent) 60%, transparent);
+}
+#experience .border-gray-200 {
+    border-color: var(--color-border);
+}
+
+/* Etiquetas de tecnologías: chips planos en monoespaciada */
+#experience span.rounded-full {
+    background: color-mix(in srgb, var(--color-brand-blue) 10%, transparent);
+    color: var(--color-foreground);
+    border: 1px solid color-mix(in srgb, var(--color-brand-blue) 30%, transparent);
+    border-radius: 0.375rem;
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-weight: 500;
+}
+
+/* Modo oscuro: bordes y grises del contenido compartido */
+@media (prefers-color-scheme: dark) {
+    .border-gray-200,
+    .border-gray-300 {
+        border-color: var(--color-border);
+    }
+    .text-gray-500,
+    .text-gray-600,
+    .text-gray-700 {
+        color: var(--color-muted-foreground);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
