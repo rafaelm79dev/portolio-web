@@ -37,7 +37,7 @@ export default {
             { "value": "20+", "label": "años de experiencia" },
             { "value": "2017", "label": "trabajando como consultor independiente" }
         ],
-        "gridTitle": "En qué te puedo ayudar",
+        "gridTitle": "¿En qué te puedo ayudar?",
         "list": [
             {
                 "title": "Aplicaciones web y APIs a medida",
