@@ -66,7 +66,7 @@ export default function Home() {
                         <div className="space-y-5 md:space-y-6">
                             {skillCategories.map((category) => (
                                 <div key={category.title}>
-                                    <h3 className="text-sm md:text-base font-semibold text-foreground mb-2 md:mb-3">
+                                    <h3 className="text-sm md:text-base font-semibold text-accent-text mb-2 md:mb-3">
                                         {category.title}
                                     </h3>
                                     <div className="flex flex-wrap gap-2 md:gap-3">
@@ -115,7 +115,7 @@ export default function Home() {
                         <ul className="space-y-4">
                             {education.map((item) => (
                                 <li key={`${item.institution}-${item.title}`}>
-                                    <p className="text-sm md:text-base font-bold">{item.institution}</p>
+                                    <p className="text-sm md:text-base font-bold text-accent-text">{item.institution}</p>
                                     <p className="text-xs md:text-base">{item.title}</p>
                                     <p className="text-xs md:text-sm text-foreground/60">{item.period}</p>
                                 </li>
