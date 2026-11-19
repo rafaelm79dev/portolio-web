@@ -129,6 +129,7 @@ export default {
             {
                 "title": "Programadora y Tester",
                 "company": "Infocorp - Uruguay",
+                "image": "/company_logo/infocorp.png",
                 "period": "May. 2012 - Jun. 2014",
                 "description": [
                     "Programadora (ene. 2013 - jun. 2014): desarrollo de aplicaciones con SharePoint 2013, la versión más reciente en ese momento, con tareas de investigación y documentación de la nueva tecnología.",

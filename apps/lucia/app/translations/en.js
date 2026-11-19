@@ -129,6 +129,7 @@ export default {
             {
                 "title": "Programmer & Tester",
                 "company": "Infocorp - Uruguay",
+                "image": "/company_logo/infocorp.png",
                 "period": "May. 2012 - Jun. 2014",
                 "description": [
                     "Programmer (Jan. 2013 - Jun. 2014): application development with SharePoint 2013, the newest version at the time, including research and documentation of the new technology.",
