@@ -3,13 +3,14 @@
 
 /*
  * Prueba: look & feel inspirado en https://apitool.techspot365.com
- * Paleta neutra tipo Zinc, azul de marca, bordes finos, formas planas,
- * etiquetas en monoespaciada y modo claro/oscuro según el sistema.
+ * Paleta neutra tipo Zinc, violeta de marca con azul secundario, bordes finos,
+ * formas planas y etiquetas en monoespaciada. Solo tema claro.
  */
 @theme {
     --color-background: #ffffff;
     --color-foreground: #18181b;
-    --color-accent: #1688ce;
+    --color-accent: #6e2682; /* violeta de marca (brand-purple de APITool) */
+    --color-brand-blue: #1688ce; /* azul secundario, usado en el degradado */
     --color-muted-foreground: #71717b;
     --color-muted: #f4f4f5;
     --color-border: #e4e4e7;
@@ -40,7 +41,8 @@ h2.font-bold {
 
 /* Header: línea inferior fina en lugar de degradado */
 header.sticky {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--color-brand-blue), var(--color-accent)) 1;
 }
 
 /* Tarjetas de experiencia: planas, borde fino, sin sombra ni movimiento */
@@ -52,6 +54,7 @@ header.sticky {
 #experience .shadow-2xl:hover {
     box-shadow: none;
     translate: none;
+    border-color: color-mix(in srgb, var(--color-accent) 60%, transparent);
 }
 #experience .border-gray-200 {
     border-color: var(--color-border);
