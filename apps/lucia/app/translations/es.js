@@ -5,8 +5,7 @@ export default {
     "skipToContent": "Saltar al contenido principal",
     "profile": {
         "description": "Soy desarrolladora Salesforce desde 2014. Me gusta tanto el desarrollo declarativo como el basado en código, y tengo experiencia creando aplicaciones desde cero o mejorando las existentes, siempre buscando que sean lo más amigables posible para quien las usa. Trabajo muy cerca del cliente: disfruto el relevamiento de requerimientos y encontrar la mejor solución para cada desafío.\n\nVengo de un background en Java y .NET, con experiencia previa en otras tecnologías, pero hace muchos años Salesforce me conquistó. Trabajo en equipo y me encanta compartir lo que sé con mis compañeros.\n\nHoy me enfoco en el desarrollo de Lightning Web Components, y también tengo mucha experiencia con Flows, código Apex, triggers, batches, páginas Visualforce y más. Siempre estoy contenta de aprender y de encontrar nuevos desafíos.",
-        "languages": "Idiomas: Español (Nativo) · Inglés (C1)",
-        "trailhead": "Perfil de Trailblazer en Trailhead"
+        "languages": "Idiomas: Español (Nativo) · Inglés (C1)"
     },
     "sections": {
         "certifications": "Certificaciones",
@@ -93,23 +92,28 @@ export default {
                 "image": "/company_logo/cloudgaia.png",
                 "period": "May. 2021 - Ene. 2022",
                 "description": [
-                    "Arquitecta en un programa de implementación de gran escala, con un equipo de 3 PMs y 3 arquitectos Salesforce.",
-                    "Trabajé en coordinación con los otros dos arquitectos."
+                    "Diseñé y construí la prueba de concepto de Power BI integrado en Salesforce que llevó al cliente, una compañía del sector Oil & Gas en Latinoamérica, a aprobar el proyecto.",
+                    "Arquitecta de una implementación de Sales Cloud desde cero, que muestra dentro del CRM datos de SAP mediante Power BI y su API.",
+                    "Uno de los 3 arquitectos de un programa con 3 PMs y 12 desarrolladores. Lideré directamente a 3 desarrolladores, un DevOps y una QA."
                 ],
                 "projects": [],
-                "technologies": ["Salesforce", "Arquitectura"]
+                "technologies": ["Sales Cloud","Power BI","SAP","Arquitectura","Liderazgo técnico"]
             },
             {
-                "title": "Technical Lead / Senior Salesforce Developer",
+                "title": "Salesforce Developer → Technical Lead → Manager",
                 "company": "Travel Leaders Group - Uruguay",
                 "image": "/company_logo/travelleaders.png",
                 "period": "Abr. 2017 - May. 2021",
                 "description": [
-                    "Desarrollo de soluciones Salesforce.",
-                    "Salesforce Developer desde abril de 2017, Technical Lead / Senior Salesforce Developer desde abril de 2019, y Manager & Technical Lead entre marzo y abril de 2021."
+                    "Desarrollo y evolución de 3 orgs Salesforce (incluida la división Luxury) para ventas, atención al cliente, cruceros y gestión de pasajeros.",
+                    "Ascendida a Technical Lead en 2019. Lideré un equipo de 5 o 6 desarrolladores y fui el nexo técnico con el cliente.",
+                    "Implanté code review, estándares de desarrollo, documentación, onboarding de developers y CI/CD con Azure DevOps.",
+                    "Construí una herramienta de carga masiva por CSV que asocia cada pasajero con su crucero y fecha de viaje.",
+                    "Implementé Twilio para el envío de SMS desde Salesforce, con una interfaz a medida para los usuarios.",
+                    "En 2021 asumí el rol de Manager para la gestión de personas del equipo: evaluaciones de desempeño y contrataciones."
                 ],
                 "projects": [],
-                "technologies": ["Salesforce", "Liderazgo técnico"]
+                "technologies": ["Salesforce","Azure DevOps","CI/CD","Twilio","Liderazgo técnico"]
             },
             {
                 "title": "Salesforce Developer",

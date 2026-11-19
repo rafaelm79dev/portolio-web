@@ -1,6 +1,7 @@
 "use client";
 
 import { Header, useTranslations } from "@portfolio/ui";
+import { PATHS } from "../site-config.js";
 
 const photo = { src: "/profile.png", alt: "Lucía Salvarrey" };
 
@@ -12,6 +13,12 @@ const socialLinks = [
         icon: "/social/linkedin.svg",
         url: "https://www.linkedin.com/in/luciasalvarrey",
         alt: "LinkedIn Profile",
+    },
+    {
+        name: "Trailhead",
+        icon: "/social/trailhead.svg",
+        url: "https://www.salesforce.com/trailblazer/lsalvarrey",
+        alt: "Trailhead Profile",
     },
 ];
 
@@ -26,6 +33,7 @@ export default function SiteHeader() {
             photo={photo}
             badges={badges}
             socialLinks={socialLinks}
+            languageHrefs={PATHS}
         />
     );
 }

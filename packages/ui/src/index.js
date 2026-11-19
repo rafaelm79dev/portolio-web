@@ -7,3 +7,4 @@ export { default as ProjectItem } from "./components/ProjectItem.js";
 export { default as Header } from "./components/Header.js";
 export { default as SiteToggle } from "./components/SiteToggle.js";
 export { default as MetadataUpdater } from "./metadata/MetadataUpdater.js";
+export { buildLocalizedMetadata } from "./metadata/buildLocalizedMetadata.js";

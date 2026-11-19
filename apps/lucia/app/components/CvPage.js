@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import SiteHeader from "./components/SiteHeader";
+import SiteHeader from "./SiteHeader";
 import { ExperienceItem, useTranslations } from "@portfolio/ui";
 
-export default function Home() {
+export default function CvPage() {
     const { t } = useTranslations();
 
     const certifications = t("certifications");
@@ -30,16 +30,6 @@ export default function Home() {
                         </p>
                         <p className="text-xs md:text-sm text-foreground/60 mt-3">
                             {t("profile.languages")}
-                        </p>
-                        <p className="text-xs md:text-sm mt-2">
-                            <Link
-                                href="https://www.salesforce.com/trailblazer/lsalvarrey"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="font-semibold text-accent-text underline decoration-accent-text/40 underline-offset-4 hover:decoration-accent-text"
-                            >
-                                {t("profile.trailhead")}
-                            </Link>
                         </p>
                     </div>
                 </section>

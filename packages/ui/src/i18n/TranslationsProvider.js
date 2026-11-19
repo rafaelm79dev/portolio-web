@@ -7,10 +7,17 @@ const TranslationsContext = createContext(null);
 
 /**
  * Holds the current language and the app's dictionaries.
- * `translations` is `{ es: {...}, en: {...} }`; the language is persisted in localStorage.
+ * `translations` is `{ es: {...}, en: {...} }`.
+ *
+ * - Without `language` (client-side switching): the language is state, persisted
+ *   in localStorage under `storageKey`. Only saved values that exist in
+ *   `translations` are accepted.
+ * - With `language` (one URL per language): the route decides the language, so
+ *   nothing is read from or written to localStorage and `changeLanguage` is a no-op.
  */
 export function TranslationsProvider({
     translations,
+    language: fixedLanguage,
     defaultLanguage = "es",
     storageKey = "portfolio-language",
     children,
@@ -18,19 +25,23 @@ export function TranslationsProvider({
     const [language, setLanguage] = useState(defaultLanguage);
 
     useEffect(() => {
+        if (fixedLanguage) return;
         const saved = localStorage.getItem(storageKey);
-        if (saved) {
+        if (saved && translations[saved]) {
             setLanguage(saved);
         }
-    }, [storageKey]);
+    }, [fixedLanguage, storageKey, translations]);
 
     const changeLanguage = (lang) => {
+        if (fixedLanguage) return;
         setLanguage(lang);
         localStorage.setItem(storageKey, lang);
     };
 
     return (
-        <TranslationsContext.Provider value={{ language, changeLanguage, translations }}>
+        <TranslationsContext.Provider
+            value={{ language: fixedLanguage ?? language, changeLanguage, translations }}
+        >
             {children}
         </TranslationsContext.Provider>
     );

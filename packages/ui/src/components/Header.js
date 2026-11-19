@@ -15,6 +15,7 @@ import SiteToggle from "./SiteToggle.js";
  * - badges: [{ src, alt, rounded? }] small images next to the name (rounded = flag style)
  * - socialLinks: [{ name, icon, url, alt }]
  * - navItems: optional [{ href, label }]; without it the page toggle is not rendered
+ * - languageHrefs: optional { en, es } paths; makes the flags links (one URL per language)
  */
 export default function Header({
     name,
@@ -23,6 +24,7 @@ export default function Header({
     badges = [],
     socialLinks = [],
     navItems,
+    languageHrefs,
 }) {
     return (
         <header className="sticky top-0 z-50 bg-gradient-to-b from-header-from via-header-via to-header-to border-b border-accent-yellow py-4 px-2 md:px-6 backdrop-blur-sm bg-opacity-95">
@@ -79,7 +81,7 @@ export default function Header({
 
                 {/* Right section: Social media links */}
                 <div className="flex items-center gap-3">
-                    <LanguageSwitcher />
+                    <LanguageSwitcher hrefs={languageHrefs} />
                     {socialLinks.map((link) => (
                         <Link
                             key={link.name}

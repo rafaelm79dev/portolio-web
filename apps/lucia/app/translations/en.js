@@ -5,8 +5,7 @@ export default {
     "skipToContent": "Skip to main content",
     "profile": {
         "description": "I've been a Salesforce developer since 2014! I love declarative and code-centered development. I have experience creating apps from the ground up or updating existing ones, always trying to make them as user friendly as possible. I'm very client oriented: I love doing requirements gathering and finding the best solution for each challenge.\n\nI come from a Java and .NET background and have previous experience with other technologies, but many years ago Salesforce won my heart. I'm also a team player and love to teach all my knowledge to my teammates.\n\nRight now I'm focusing on Lightning Web Components development, but I also have a lot of experience with Flows, Apex code, Apex triggers, batches, Visualforce pages, and more. I'm always happy to learn and find new challenges.",
-        "languages": "Languages: Spanish (Native) · English (C1)",
-        "trailhead": "Trailblazer profile on Trailhead"
+        "languages": "Languages: Spanish (Native) · English (C1)"
     },
     "sections": {
         "certifications": "Certifications",
@@ -93,23 +92,28 @@ export default {
                 "image": "/company_logo/cloudgaia.png",
                 "period": "May. 2021 - Jan. 2022",
                 "description": [
-                    "Architect on a large-scale implementation program, with a team of 3 PMs and 3 Salesforce architects.",
-                    "Worked in coordination with the other two architects."
+                    "Designed and built the proof of concept for Power BI inside Salesforce that won client approval for the program (an Oil & Gas company in LATAM).",
+                    "Architect on a greenfield Sales Cloud implementation that shows SAP data inside the CRM through Power BI and its API.",
+                    "One of 3 architects on a program with 3 PMs and 12 developers; directly led 3 developers, a DevOps engineer and a QA."
                 ],
                 "projects": [],
-                "technologies": ["Salesforce", "Architecture"]
+                "technologies": ["Sales Cloud","Power BI","SAP","Architecture","Technical Leadership"]
             },
             {
-                "title": "Technical Lead / Senior Salesforce Developer",
+                "title": "Salesforce Developer → Technical Lead → Manager",
                 "company": "Travel Leaders Group - Uruguay",
                 "image": "/company_logo/travelleaders.png",
                 "period": "Apr. 2017 - May. 2021",
                 "description": [
-                    "Salesforce solutions development.",
-                    "Salesforce Developer from April 2017, Technical Lead / Senior Salesforce Developer from April 2019, and Manager & Technical Lead between March and April 2021."
+                    "Built and evolved 3 Salesforce orgs (including the Luxury division) covering sales, customer service, cruises and passenger management.",
+                    "Promoted to Technical Lead in 2019. Led a team of 5 or 6 developers and was the main technical contact for the business.",
+                    "Introduced code reviews, development standards, documentation, developer onboarding and CI/CD with Azure DevOps.",
+                    "Built a bulk CSV upload tool that matches each passenger to the right cruise and sailing date without creating duplicates.",
+                    "Integrated Twilio for SMS from Salesforce, with a custom-built user interface.",
+                    "In 2021, also took on people management: performance reviews and hiring decisions."
                 ],
                 "projects": [],
-                "technologies": ["Salesforce", "Technical Leadership"]
+                "technologies": ["Salesforce","Azure DevOps","CI/CD","Twilio","Technical Leadership"]
             },
             {
                 "title": "Salesforce Developer",
