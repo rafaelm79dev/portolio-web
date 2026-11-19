@@ -92,7 +92,10 @@ export default {
                 "company": "CloudGaia - Uruguay",
                 "image": "/company_logo/cloudgaia.png",
                 "period": "May. 2021 - Jan. 2022",
-                "description": [],
+                "description": [
+                    "Architect on a large-scale implementation program, with a team of 3 PMs and 3 Salesforce architects.",
+                    "Worked in coordination with the other two architects."
+                ],
                 "projects": [],
                 "technologies": ["Salesforce", "Architecture"]
             },
