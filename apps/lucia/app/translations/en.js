@@ -77,6 +77,7 @@ export default {
             {
                 "title": "Salesforce Architect & Developer",
                 "company": "Rockstar Coders",
+                "image": "/company_logo/rockstarcoders.png",
                 "period": "Mar. 2022 - Nov. 2024",
                 "description": [
                     "Specialized in Lightning Web Components, Flows, and Apex development and architecture.",
