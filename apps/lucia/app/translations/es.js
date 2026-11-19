@@ -5,8 +5,7 @@ export default {
     "skipToContent": "Saltar al contenido principal",
     "profile": {
         "description": "Soy desarrolladora Salesforce desde 2014. Me gusta tanto el desarrollo declarativo como el basado en código, y tengo experiencia creando aplicaciones desde cero o mejorando las existentes, siempre buscando que sean lo más amigables posible para quien las usa. Trabajo muy cerca del cliente: disfruto el relevamiento de requerimientos y encontrar la mejor solución para cada desafío.\n\nVengo de un background en Java y .NET, con experiencia previa en otras tecnologías, pero hace muchos años Salesforce me conquistó. Trabajo en equipo y me encanta compartir lo que sé con mis compañeros.\n\nHoy me enfoco en el desarrollo de Lightning Web Components, y también tengo mucha experiencia con Flows, código Apex, triggers, batches, páginas Visualforce y más. Siempre estoy contenta de aprender y de encontrar nuevos desafíos.",
-        "languages": "Idiomas: Español (Nativo) · Inglés (C1)",
-        "trailhead": "Perfil de Trailblazer en Trailhead"
+        "languages": "Idiomas: Español (Nativo) · Inglés (C1)"
     },
     "sections": {
         "certifications": "Certificaciones",

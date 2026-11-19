@@ -5,8 +5,7 @@ export default {
     "skipToContent": "Skip to main content",
     "profile": {
         "description": "I've been a Salesforce developer since 2014! I love declarative and code-centered development. I have experience creating apps from the ground up or updating existing ones, always trying to make them as user friendly as possible. I'm very client oriented: I love doing requirements gathering and finding the best solution for each challenge.\n\nI come from a Java and .NET background and have previous experience with other technologies, but many years ago Salesforce won my heart. I'm also a team player and love to teach all my knowledge to my teammates.\n\nRight now I'm focusing on Lightning Web Components development, but I also have a lot of experience with Flows, Apex code, Apex triggers, batches, Visualforce pages, and more. I'm always happy to learn and find new challenges.",
-        "languages": "Languages: Spanish (Native) · English (C1)",
-        "trailhead": "Trailblazer profile on Trailhead"
+        "languages": "Languages: Spanish (Native) · English (C1)"
     },
     "sections": {
         "certifications": "Certifications",

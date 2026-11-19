@@ -14,6 +14,12 @@ const socialLinks = [
         url: "https://www.linkedin.com/in/luciasalvarrey",
         alt: "LinkedIn Profile",
     },
+    {
+        name: "Trailhead",
+        icon: "/social/trailhead.svg",
+        url: "https://www.salesforce.com/trailblazer/lsalvarrey",
+        alt: "Trailhead Profile",
+    },
 ];
 
 /** Lucía's header: her data on top of the shared Header. */
