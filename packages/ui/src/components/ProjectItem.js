@@ -16,7 +16,7 @@ export default function ProjectItem({ project }) {
 
     // Si hay domain, envolver en Link, si no, solo mostrar la imagen
     const imageContent = (
-        <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden shadow-lg mb-2 border border-gray-200">
+        <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden bg-white mb-2 border border-gray-200">
             <Image
                 src={image}
                 alt={finalDisplayName || "Project image"}
@@ -58,7 +58,7 @@ export default function ProjectItem({ project }) {
                         href={domain}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs md:text-sm text-gray-600 underline hover:text-foreground"
+                        className="text-xs md:text-sm text-accent-text underline hover:opacity-80"
                     >
                         {domain.replace(/^https?:\/\//, "").replace(/\/$/, "")}
                     </Link>
@@ -88,7 +88,7 @@ export default function ProjectItem({ project }) {
                     <dl className="grid grid-cols-[auto_1fr] items-center gap-x-3 gap-y-2 text-left w-full px-2 mt-3 pt-3 border-t border-gray-200">
                         {technologies.map((tech, index) => (
                             <Fragment key={index}>
-                                <dt className="justify-self-start bg-accent text-foreground rounded-full px-3 py-1 text-[10px] md:text-xs font-semibold shadow-sm whitespace-nowrap">
+                                <dt className="justify-self-start border border-brand-blue/30 bg-brand-blue/10 text-foreground rounded-md font-mono font-medium px-3 py-1 text-[10px] md:text-xs whitespace-nowrap">
                                     {tech.name}
                                 </dt>
                                 <dd className="text-xs md:text-sm text-gray-600 leading-snug">
@@ -102,7 +102,7 @@ export default function ProjectItem({ project }) {
                         {technologies.map((tech, index) => (
                             <span
                                 key={index}
-                                className="bg-accent text-foreground rounded-full px-3 py-1 text-[10px] md:text-xs font-semibold shadow-sm"
+                                className="border border-brand-blue/30 bg-brand-blue/10 text-foreground rounded-md font-mono font-medium px-3 py-1 text-[10px] md:text-xs"
                             >
                                 {tech}
                             </span>
