@@ -118,6 +118,7 @@ export default {
             {
                 "title": "Salesforce Developer",
                 "company": "Nimacloud",
+                "image": "/company_logo/nimacloud.png",
                 "period": "Jul. 2014 - Jun. 2015",
                 "description": [
                     "Desarrollo (y en algunos casos diseño) de aplicaciones Salesforce.",
