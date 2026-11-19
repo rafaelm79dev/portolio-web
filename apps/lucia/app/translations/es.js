@@ -98,6 +98,7 @@ export default {
             {
                 "title": "Technical Lead / Senior Salesforce Developer",
                 "company": "Travel Leaders Group - Uruguay",
+                "image": "/company_logo/travelleaders.png",
                 "period": "Abr. 2017 - May. 2021",
                 "description": [
                     "Desarrollo de soluciones Salesforce.",
