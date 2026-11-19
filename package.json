@@ -4,6 +4,8 @@
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "dev:rafael": "npm run dev -w apps/rafael",
-    "build:rafael": "npm run build -w apps/rafael"
+    "build:rafael": "npm run build -w apps/rafael",
+    "dev:lucia": "npm run dev -w apps/lucia",
+    "build:lucia": "npm run build -w apps/lucia"
   }
 }

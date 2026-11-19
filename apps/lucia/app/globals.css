@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@source "../../../packages/ui/src";
+
+@theme {
+    /* Color palette (provisional, to be defined with Lucía) */
+    --color-background: #eef1f3;
+    --color-foreground: #1f2d3a;
+    --color-accent: #7cc4d4;
+    --color-muted-foreground: #5b6b78;
+    --color-muted: #d5dde2;
+
+    /* Header gradient */
+    --color-header-from: #f8fafb;
+    --color-header-via: #e6ecef;
+    --color-header-to: #c9d6dd;
+
+    /* Experience card gradient */
+    --color-card-from: #ffffff;
+    --color-card-via: #f4f7f9;
+    --color-card-to: #e3eaee;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
