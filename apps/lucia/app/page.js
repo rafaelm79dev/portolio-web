@@ -36,7 +36,7 @@ export default function Home() {
                                 href="https://www.salesforce.com/trailblazer/lsalvarrey"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-semibold underline decoration-foreground/30 underline-offset-4 hover:decoration-foreground"
+                                className="font-semibold text-accent-text underline decoration-accent-text/40 underline-offset-4 hover:decoration-accent-text"
                             >
                                 {t("profile.trailhead")}
                             </Link>
