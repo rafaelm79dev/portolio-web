@@ -93,8 +93,8 @@ export default {
                 "period": "May. 2021 - Ene. 2022",
                 "description": [
                     "Diseñé y construí la prueba de concepto de Power BI integrado en Salesforce que llevó al cliente, una compañía del sector Oil & Gas en Latinoamérica, a aprobar el proyecto.",
-                    "Arquitecta en la implementación desde cero de Sales Cloud, con visualización dentro del CRM de datos de SAP vía Power BI y su API.",
-                    "Parte de un equipo de arquitectura de 3 arquitectos, con 3 PMs y 12 desarrolladores. Lideré directamente a 3 desarrolladores, un DevOps y una QA."
+                    "Arquitecta de una implementación de Sales Cloud desde cero, que muestra dentro del CRM datos de SAP mediante Power BI y su API.",
+                    "Uno de los 3 arquitectos de un programa con 3 PMs y 12 desarrolladores. Lideré directamente a 3 desarrolladores, un DevOps y una QA."
                 ],
                 "projects": [],
                 "technologies": ["Sales Cloud","Power BI","SAP","Arquitectura","Liderazgo técnico"]
@@ -106,7 +106,7 @@ export default {
                 "period": "Abr. 2017 - May. 2021",
                 "description": [
                     "Desarrollo y evolución de 3 orgs Salesforce (incluida la división Luxury) para ventas, atención al cliente, cruceros y gestión de pasajeros.",
-                    "Ascendida a Technical Lead en 2019. Lideré un equipo de 5–6 desarrolladores y fui el nexo técnico con el cliente.",
+                    "Ascendida a Technical Lead en 2019. Lideré un equipo de 5 o 6 desarrolladores y fui el nexo técnico con el cliente.",
                     "Implanté code review, estándares de desarrollo, documentación, onboarding de developers y CI/CD con Azure DevOps.",
                     "Construí una herramienta de carga masiva por CSV que asocia cada pasajero con su crucero y fecha de viaje.",
                     "Implementé Twilio para el envío de SMS desde Salesforce, con una interfaz a medida para los usuarios.",

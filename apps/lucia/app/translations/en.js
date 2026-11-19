@@ -92,8 +92,8 @@ export default {
                 "image": "/company_logo/cloudgaia.png",
                 "period": "May. 2021 - Jan. 2022",
                 "description": [
-                    "Designed and built the Power BI–in-Salesforce proof of concept that secured client approval for the program (Oil & Gas company, LATAM).",
-                    "Architect on a greenfield Sales Cloud implementation surfacing SAP data inside the CRM through Power BI and its API.",
+                    "Designed and built the proof of concept for Power BI inside Salesforce that won client approval for the program (an Oil & Gas company in LATAM).",
+                    "Architect on a greenfield Sales Cloud implementation that shows SAP data inside the CRM through Power BI and its API.",
                     "One of 3 architects on a program with 3 PMs and 12 developers; directly led 3 developers, a DevOps engineer and a QA."
                 ],
                 "projects": [],
@@ -106,7 +106,7 @@ export default {
                 "period": "Apr. 2017 - May. 2021",
                 "description": [
                     "Built and evolved 3 Salesforce orgs (including the Luxury division) covering sales, customer service, cruises and passenger management.",
-                    "Promoted to Technical Lead in 2019; led a team of 5–6 developers and served as the main technical contact for the business.",
+                    "Promoted to Technical Lead in 2019. Led a team of 5 or 6 developers and was the main technical contact for the business.",
                     "Introduced code reviews, development standards, documentation, developer onboarding and CI/CD with Azure DevOps.",
                     "Built a bulk CSV upload tool that matches each passenger to the right cruise and sailing date without creating duplicates.",
                     "Integrated Twilio for SMS from Salesforce, with a custom-built user interface.",
