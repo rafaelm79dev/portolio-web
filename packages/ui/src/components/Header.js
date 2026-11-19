@@ -25,7 +25,7 @@ export default function Header({
     navItems,
 }) {
     return (
-        <header className="sticky top-0 z-50 bg-gradient-to-b from-[#fafafc] via-[#e2e2e2] to-[#cbd5e1] border-b border-accent-yellow py-4 px-2 md:px-6 backdrop-blur-sm bg-opacity-95">
+        <header className="sticky top-0 z-50 bg-gradient-to-b from-header-from via-header-via to-header-to border-b border-accent-yellow py-4 px-2 md:px-6 backdrop-blur-sm bg-opacity-95">
             <div className="container mx-auto flex items-center justify-between">
                 {/* Left section: Profile picture and name */}
                 <div className="flex items-center gap-2 md:gap-8">

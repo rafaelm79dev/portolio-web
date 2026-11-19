@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "../i18n/TranslationsProvider.js";
+import { getInitials } from "../utils/getInitials.js";
 /**
  * ExperienceItem component
  * Displays a single work experience block with image, title, description and technologies
@@ -20,16 +21,25 @@ export default function ExperienceItem({ experience }) {
     } = experience;
 
     return (
-        <div className="flex flex-row gap-6 m-5 px-5 py-3 md:my-10 md:px-8 md:py-6 rounded-2xl shadow-2xl hover:shadow-lg hover:-translate-y-1 bg-gradient-to-br from-white via-gray-100 to-gray-200 border border-gray-200">
+        <div className="flex flex-row gap-6 m-5 px-5 py-3 md:my-10 md:px-8 md:py-6 rounded-2xl shadow-2xl hover:shadow-lg hover:-translate-y-1 bg-gradient-to-br from-card-from via-card-via to-card-to border border-gray-200">
             {/* Company/Job image - rounded and positioned at the top left */}
             <div className="flex-shrink-0">
                 <div className={`relative w-12 h-12 md:w-24 md:h-24 rounded-lg md:rounded-2xl overflow-hidden border border-gray-200 ${logoBackground || "bg-white"}`}>
-                    <Image
-                        src={image}
-                        alt={`${company} logo`}
-                        fill
-                        className="object-contain p-1.5 md:p-3"
-                    />
+                    {image ? (
+                        <Image
+                            src={image}
+                            alt={`${company} logo`}
+                            fill
+                            className="object-contain p-1.5 md:p-3"
+                        />
+                    ) : (
+                        <span
+                            aria-hidden="true"
+                            className="absolute inset-0 flex items-center justify-center text-sm md:text-2xl font-bold text-foreground/60"
+                        >
+                            {getInitials(company)}
+                        </span>
+                    )}
                 </div>
             </div>
 

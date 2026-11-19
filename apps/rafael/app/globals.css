@@ -9,6 +9,16 @@
     --color-muted-foreground: #696762;
     --color-muted: #d3d4d4;
 
+    /* Header gradient */
+    --color-header-from: #fafafc;
+    --color-header-via: #e2e2e2;
+    --color-header-to: #cbd5e1;
+
+    /* Experience card gradient */
+    --color-card-from: #ffffff;
+    --color-card-via: var(--color-gray-100);
+    --color-card-to: var(--color-gray-200);
+
     /* You can add other theme variables here */
 }
 
