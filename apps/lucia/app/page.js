@@ -16,7 +16,7 @@ export default function Home() {
         <div className="flex flex-col max-w-screen-md mx-auto">
             <a
                 href="#main-content"
-                className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-foreground focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold"
+                className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold"
             >
                 {t("skipToContent")}
             </a>
@@ -24,12 +24,22 @@ export default function Home() {
             <main id="main-content">
                 {/* Profile Section */}
                 <section id="profile" className="px-4 md:px-6 scroll-mt-24">
-                    <div className="container mx-auto pt-8 md:pt-12 pb-3 md:pb-4">
+                    <div className="container mx-auto pt-4 md:pt-6 pb-3 md:pb-4">
                         <p className="text-sm md:text-base lg:text-lg whitespace-pre-wrap leading-relaxed">
                             {t("profile.description")}
                         </p>
                         <p className="text-xs md:text-sm text-foreground/60 mt-3">
                             {t("profile.languages")}
+                        </p>
+                        <p className="text-xs md:text-sm mt-2">
+                            <Link
+                                href="https://www.salesforce.com/trailblazer/lsalvarrey"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-semibold text-accent-text underline decoration-accent-text/40 underline-offset-4 hover:decoration-accent-text"
+                            >
+                                {t("profile.trailhead")}
+                            </Link>
                         </p>
                     </div>
                 </section>
@@ -46,7 +56,7 @@ export default function Home() {
                             {certifications.map((certification) => (
                                 <li
                                     key={certification}
-                                    className="bg-foreground text-accent rounded-full px-3 md:px-5 py-1.5 md:py-2 text-xs md:text-sm font-semibold shadow-md"
+                                    className="border border-accent/40 bg-accent/15 text-accent-text rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
                                 >
                                     {certification}
                                 </li>
@@ -66,14 +76,14 @@ export default function Home() {
                         <div className="space-y-5 md:space-y-6">
                             {skillCategories.map((category) => (
                                 <div key={category.title}>
-                                    <h3 className="text-sm md:text-base font-semibold text-foreground mb-2 md:mb-3">
+                                    <h3 className="text-sm md:text-base font-semibold text-accent-text mb-2 md:mb-3">
                                         {category.title}
                                     </h3>
                                     <div className="flex flex-wrap gap-2 md:gap-3">
                                         {category.items.map((skill) => (
                                             <span
                                                 key={skill}
-                                                className="bg-accent text-foreground rounded-full px-3 md:px-5 py-1.5 md:py-2 text-xs md:text-sm font-semibold shadow-md hover:shadow-lg transition-shadow"
+                                                className="border border-brand-blue/30 bg-brand-blue/10 text-foreground rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
                                             >
                                                 {skill}
                                             </span>
@@ -115,7 +125,7 @@ export default function Home() {
                         <ul className="space-y-4">
                             {education.map((item) => (
                                 <li key={`${item.institution}-${item.title}`}>
-                                    <p className="text-sm md:text-base font-bold">{item.institution}</p>
+                                    <p className="text-sm md:text-base font-bold text-accent-text">{item.institution}</p>
                                     <p className="text-xs md:text-base">{item.title}</p>
                                     <p className="text-xs md:text-sm text-foreground/60">{item.period}</p>
                                 </li>
@@ -127,18 +137,18 @@ export default function Home() {
                 {/* Contact Section */}
                 <section id="contact" className="px-4 md:px-6 scroll-mt-24">
                     <div className="container mx-auto py-12 md:py-16">
-                        <div className="rounded-2xl bg-foreground text-background text-center px-6 py-10 md:px-12 md:py-14 shadow-xl">
+                        <div className="rounded-xl border border-border bg-muted text-center px-6 py-10 md:px-12 md:py-14">
                             <h2 className="text-2xl md:text-4xl font-bold mb-3 text-balance">
                                 {t("contact.title")}
                             </h2>
-                            <p className="text-sm md:text-lg text-background/80 max-w-xl mx-auto mb-8">
+                            <p className="text-sm md:text-lg text-muted-foreground max-w-xl mx-auto mb-8">
                                 {t("contact.description")}
                             </p>
                             <Link
                                 href="https://www.linkedin.com/in/luciasalvarrey"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-accent text-foreground rounded-full px-6 md:px-8 py-3 text-sm md:text-base font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition"
+                                className="inline-flex items-center gap-2 bg-accent text-white rounded-md px-6 md:px-8 py-3 text-sm md:text-base font-medium hover:opacity-90 transition"
                             >
                                 {t("contact.cta")}
                             </Link>

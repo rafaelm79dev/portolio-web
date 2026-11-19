@@ -1,11 +1,12 @@
 export default {
     "header": {
-        "jobTitle": "Salesforce Technical Architect / Developer / Consultant / DevOps"
+        "jobTitle": "Salesforce Technical Architect & Senior Developer"
     },
     "skipToContent": "Saltar al contenido principal",
     "profile": {
         "description": "Soy desarrolladora Salesforce desde 2014. Me gusta tanto el desarrollo declarativo como el basado en código, y tengo experiencia creando aplicaciones desde cero o mejorando las existentes, siempre buscando que sean lo más amigables posible para quien las usa. Trabajo muy cerca del cliente: disfruto el relevamiento de requerimientos y encontrar la mejor solución para cada desafío.\n\nVengo de un background en Java y .NET, con experiencia previa en otras tecnologías, pero hace muchos años Salesforce me conquistó. Trabajo en equipo y me encanta compartir lo que sé con mis compañeros.\n\nHoy me enfoco en el desarrollo de Lightning Web Components, y también tengo mucha experiencia con Flows, código Apex, triggers, batches, páginas Visualforce y más. Siempre estoy contenta de aprender y de encontrar nuevos desafíos.",
-        "languages": "Idiomas: Español (Nativo) · Inglés (C1)"
+        "languages": "Idiomas: Español (Nativo) · Inglés (C1)",
+        "trailhead": "Perfil de Trailblazer en Trailhead"
     },
     "sections": {
         "certifications": "Certificaciones",
@@ -64,7 +65,7 @@ export default {
             },
             {
                 "title": "Senior Salesforce Developer",
-                "company": "Roycon - Estados Unidos",
+                "company": "Roycon - Estados Unidos · Part-time",
                 "image": "/company_logo/roycon.png",
                 "period": "Jul. 2023 - May. 2025",
                 "description": [
@@ -76,7 +77,7 @@ export default {
             },
             {
                 "title": "Salesforce Architect & Developer",
-                "company": "Rockstar Coders",
+                "company": "Rockstar Coders · Part-time",
                 "image": "/company_logo/rockstarcoders.png",
                 "period": "Mar. 2022 - Nov. 2024",
                 "description": [
@@ -91,7 +92,10 @@ export default {
                 "company": "CloudGaia - Uruguay",
                 "image": "/company_logo/cloudgaia.png",
                 "period": "May. 2021 - Ene. 2022",
-                "description": [],
+                "description": [
+                    "Arquitecta en un programa de implementación de gran escala, con un equipo de 3 PMs y 3 arquitectos Salesforce.",
+                    "Trabajé en coordinación con los otros dos arquitectos."
+                ],
                 "projects": [],
                 "technologies": ["Salesforce", "Arquitectura"]
             },
