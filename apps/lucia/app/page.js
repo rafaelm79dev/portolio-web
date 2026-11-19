@@ -46,7 +46,7 @@ export default function Home() {
                             {certifications.map((certification) => (
                                 <li
                                     key={certification}
-                                    className="border border-accent/40 bg-accent/10 text-foreground rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
+                                    className="border border-accent/40 bg-accent/15 text-accent-text rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
                                 >
                                     {certification}
                                 </li>
@@ -73,7 +73,7 @@ export default function Home() {
                                         {category.items.map((skill) => (
                                             <span
                                                 key={skill}
-                                                className="border border-border bg-muted text-foreground rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
+                                                className="border border-brand-blue/30 bg-brand-blue/10 text-foreground rounded-md px-3 py-1.5 text-xs md:text-sm font-medium font-mono"
                                             >
                                                 {skill}
                                             </span>
