@@ -65,6 +65,7 @@ export default {
             {
                 "title": "Senior Salesforce Developer",
                 "company": "Roycon - Estados Unidos",
+                "image": "/company_logo/roycon.png",
                 "period": "Jul. 2023 - May. 2025",
                 "description": [
                     "Diseñé y construí soluciones Salesforce escalables en Sales, Service y Experience Cloud.",
