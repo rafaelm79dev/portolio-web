@@ -57,9 +57,19 @@ h2.font-bold {
     letter-spacing: -0.025em;
 }
 
-/* Header: línea inferior fina (el degradado va en la franja superior de la página) */
+/* Header: tinte violeta suave con línea violeta debajo (el degradado va en la franja superior de la página) */
 header.sticky {
-    border-bottom: 1px solid var(--color-border);
+    background-image: none;
+    background-color: color-mix(in srgb, var(--color-accent) 10%, var(--color-background));
+    border-bottom: 2px solid var(--color-accent);
+}
+header.sticky .border-white {
+    border: 2px solid var(--color-accent);
+}
+@media (prefers-color-scheme: dark) {
+    header.sticky {
+        background-color: color-mix(in srgb, var(--color-accent) 25%, var(--color-background));
+    }
 }
 
 /* Textos resaltados en violeta: puesto del header y de cada trabajo */
